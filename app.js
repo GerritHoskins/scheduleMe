@@ -1,3 +1,4 @@
+import "firebase/database";
 const express = require('express')
 const path = require('path')
 const morgan = require('morgan')
@@ -10,11 +11,34 @@ const Cosmic = require('cosmicjs')
 const twilio = require('twilio')
 const moment = require('moment')
 const axios = require('axios')
-
+const firebase = require('firebase')
+const reduxfb = require('react-redux-firebase')
+const createStore = require('./src/Store/createStore')
+const Provider = require("react-redux")
 const app = express()
 const env = process.env.NODE_ENV || 'development'
 
-app.set('trust proxy', 1)
+let store = null;
+let rrfProps = null;
+let isInit= false;
+
+try {
+  firebase.initializeApp(config.firebase);
+  isInit = true;
+} catch (err) {
+  console.warn("no fb init.");
+}
+
+if(isInit) {
+  store = createStore();
+  rrfProps = {
+      firebase,
+      config: { userProfile: "users" },
+      dispatch: store.dispatch
+  }; 
+} 
+
+/* app.set('trust proxy', 1)
 app.use(session({
   secret: 'sjcimsoc',
   resave: false,
@@ -26,10 +50,10 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
-app.set('port', process.env.PORT || 3000)
+app.set('port', process.env.PORT || 3000) */
 
 //handle requests for new appointments
-app.post('/api/appointments', (req, res) => {
+/* app.post('/api/appointments', (req, res) => {
   const twilioSid = config.twilio.sid
   const twilioAuth = config.twilio.auth
   const twilioClient = twilio(twilioSid, twilioAuth)
@@ -108,3 +132,4 @@ app.get('*', (req, res) => {
 http.createServer(app).listen(app.get('port'), () =>
   console.log('Server running at: ' + app.get('port'))
 )
+ */

@@ -5,6 +5,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import QueryString from 'query-string'
 import 'normalize.css'
 
+serviceWorker.register();
+
+
 window.React = React
 
 let url = QueryString.parse(location.search)
@@ -19,7 +22,7 @@ const config = { bucket: {
 
 ReactDom.render(
   <MuiThemeProvider>
-    <App config={config}/>
+    <FireBaseSetup config={config}/>
   </MuiThemeProvider>,
   document.getElementById('root')
 )
