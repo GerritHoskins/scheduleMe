@@ -5,10 +5,12 @@ const app = require('express')();
 
 const {
     getAllTodos,
-    postOneTodo
+    postOneTodo,
+    deleteTodo
 } = require('./APIs/todos')
 
 app.post('/todo', postOneTodo);
 app.get('/todos', getAllTodos);
+app.delete('/todo/:todoId', deleteTodo);
 
 exports.api = functions.https.onRequest(app);
