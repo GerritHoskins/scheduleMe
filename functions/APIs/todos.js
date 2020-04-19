@@ -69,3 +69,23 @@ exports.deleteTodo = (request, response) => {
             return response.status(500).json({ error: err.code });
         });
 };
+
+exports.editTodo = ( request, response ) => { 
+    if(request.body.todoId || request.body.createdAt){
+        response.status(403).json({message: 'Not allowed to edit'});
+    }
+    let document = db.collection('todos').doc(`${request.params.todoId}`);
+    document.fieldValue.update(request.body)
+    .then((doc)=> {
+        response.json({message: 'Updated successfully'});
+    })
+    .catch((error) => {
+        if(error.code === 5){
+            response.status(404).json({message: 'Not Found'});
+        }
+        console.error(error);
+        return response.status(500).json({ 
+                error: error.code 
+        });
+    });
+};
