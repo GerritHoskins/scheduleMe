@@ -14,13 +14,14 @@ const {
     getAllTodos,
     postOneTodo,
     deleteTodo,
-    editTodo
+    editTodo,
+    signUpUser
 } = require('./APIs/todos')
 
 app.post('/todo', postOneTodo);
 app.get('/todos', getAllTodos);
 app.delete('/todo/:todoId', deleteTodo);
 app.put('/todo/:todoId', editTodo);
-
+app.post('/signup', signUpUser);
 
 exports.api = functions.https.onRequest(app);
