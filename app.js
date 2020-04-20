@@ -15,28 +15,36 @@ const firebase = require('firebase')
 const reduxfb = require('react-redux-firebase')
 const createStore = require('./src/Store/createStore')
 const Provider = require("react-redux")
-const app = express()
+
 const env = process.env.NODE_ENV || 'development'
 
-let store = null;
-let rrfProps = null;
-let isInit= false;
+const functions = require('firebase-functions');
+const app = express()
 
-try {
-  firebase.initializeApp(config.firebase);
-  isInit = true;
-} catch (err) {
-  console.warn("no fb init.");
-}
+//const auth = require('./util/auth');
+const {
+    loginUser,
+    signUpUser
+} = require('./APIs/users')
 
-if(isInit) {
-  store = createStore();
-  rrfProps = {
-      firebase,
-      config: { userProfile: "users" },
-      dispatch: store.dispatch
-  }; 
-} 
+// Users
+app.post('/login', loginUser);
+app.post('/signup', signUpUser);
+
+const {
+    getAllTodos,
+    postOneTodo,
+    deleteTodo,
+    editTodo   
+} = require('./APIs/todos')
+
+app.post('/todo', postOneTodo);
+app.get('/todos', getAllTodos);
+app.delete('/todo/:todoId', deleteTodo);
+app.put('/todo/:todoId', editTodo);
+
+
+exports.api = functions.https.onRequest(app);
 
 /* app.set('trust proxy', 1)
 app.use(session({

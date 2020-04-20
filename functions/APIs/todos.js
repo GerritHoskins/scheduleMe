@@ -75,7 +75,7 @@ exports.editTodo = ( request, response ) => {
         response.status(403).json({message: 'Not allowed to edit'});
     }
     let document = db.collection('todos').doc(`${request.params.todoId}`);
-    document.fieldValue.update(request.body)
+    document.update({body : request.body})
     .then((doc)=> {
         response.json({message: 'Updated successfully'});
     })
