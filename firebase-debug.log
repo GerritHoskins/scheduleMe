@@ -1,11 +1,158 @@
-[debug] [2020-04-20T14:16:13.513Z] ----------------------------------------------------------------------
-[debug] [2020-04-20T14:16:13.516Z] Command:       C:\Program Files\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2020-04-20T14:16:13.516Z] CLI Version:   8.1.1
-[debug] [2020-04-20T14:16:13.516Z] Platform:      win32
-[debug] [2020-04-20T14:16:13.517Z] Node Version:  v13.10.1
-[debug] [2020-04-20T14:16:13.518Z] Time:          Mon Apr 20 2020 16:16:13 GMT+0200 (Central European Summer Time)
-[debug] [2020-04-20T14:16:13.518Z] ----------------------------------------------------------------------
-[debug] [2020-04-20T14:16:13.518Z] 
-[debug] [2020-04-20T14:16:13.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-20T14:16:13.542Z] > authorizing via signed-in user
+[debug] [2020-04-20T21:53:29.490Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T21:53:29.497Z] Command:       C:\Program Files\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2020-04-20T21:53:29.498Z] CLI Version:   8.1.1
+[debug] [2020-04-20T21:53:29.498Z] Platform:      win32
+[debug] [2020-04-20T21:53:29.498Z] Node Version:  v13.10.1
+[debug] [2020-04-20T21:53:29.500Z] Time:          Mon Apr 20 2020 23:53:29 GMT+0200 (Central European Summer Time)
+[debug] [2020-04-20T21:53:29.500Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T21:53:29.500Z] 
+[debug] [2020-04-20T21:53:29.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T21:53:29.523Z] > authorizing via signed-in user
 [info] i  emulators: Starting emulators: functions, firestore, database, hosting
+[debug] [2020-04-20T21:53:31.631Z] [hub] writing locator at C:\Users\gsharpp\AppData\Local\Temp\hub-dbtronics-79c66.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "13"
+[info] +  functions: functions emulator started at http://localhost:5001
+[warn] !  firestore: Cloud Firestore rules file C:\dev\appointment-scheduler-master\firestore.rules specified in firebase.json does not exist.
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration.
+[debug] [2020-04-20T21:53:35.830Z] Ignoring unsupported arg: projectId
+[debug] [2020-04-20T21:53:35.831Z] Ignoring unsupported arg: auto_download
+[debug] [2020-04-20T21:53:35.831Z] Starting firestore emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\gsharpp\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.11.3.jar","--host","localhost","--port",5002,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false}
+[info] i  firestore: firestore emulator logging to firestore-debug.log
+[debug] [2020-04-20T21:53:41.786Z] API endpoint: http://
+[debug] [2020-04-20T21:53:41.789Z] localhost:5002
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:5002
+
+Dev App Server is now running.
+
+
+[info] +  firestore: firestore emulator started at http://localhost:5002
+[info] i  firestore: For testing set FIRESTORE_EMULATOR_HOST=localhost:5002
+[warn] !  database: Did not find a Realtime Database rules file specified in a firebase.json config file.
+[warn] !  database: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration.
+[debug] [2020-04-20T21:53:44.107Z] Ignoring unsupported arg: projectId
+[debug] [2020-04-20T21:53:44.107Z] Ignoring unsupported arg: auto_download
+[debug] [2020-04-20T21:53:44.108Z] Starting database emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\gsharpp\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.4.1.jar","--host","localhost","--port",9002,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false}
+[info] i  database: database emulator logging to database-debug.log
+[debug] [2020-04-20T21:53:50.120Z] 23:53:50.113 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+
+[debug] [2020-04-20T21:53:50.701Z] 23:53:50.701 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9002
+
+[info] +  database: database emulator started at http://localhost:9002
+[info] i  database: For testing set FIREBASE_DATABASE_EMULATOR_HOST=localhost:9002
+[debug] [2020-04-20T21:53:53.477Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-20T21:53:53.477Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-20T21:53:54.069Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 21:53:53 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-20T21:53:54.084Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/dbtronics-79c66/webApps/-/config  
+ 
+[debug] [2020-04-20T21:53:55.115Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 21:53:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  hosting: hosting emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\dev\appointment-scheduler-master\functions" for Cloud Functions...
+[debug] [2020-04-20T21:53:55.590Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-20T21:53:55.591Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-20T21:53:55.591Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-20T21:53:55.591Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\15016 
+[debug] [2020-04-20T21:53:55.592Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: BUSY 
+[debug] [2020-04-20T21:53:56.927Z] [runtime-status] [15016] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.10.1"} 
+[debug] [2020-04-20T21:53:56.934Z] [runtime-status] [15016] Disabled runtime features: undefined 
+[debug] [2020-04-20T21:53:56.943Z] [runtime-status] [15016] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-20T21:53:56.952Z] [runtime-status] [15016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-20T21:53:56.955Z] [runtime-status] [15016] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-20T21:53:57.162Z] [runtime-status] [15016] Checked functions.config() {"config":{}} 
+[debug] [2020-04-20T21:53:57.163Z] [runtime-status] [15016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-20T21:53:57.164Z] [runtime-status] [15016] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-20T21:53:57.165Z] [runtime-status] [15016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-20T21:53:57.165Z] [runtime-status] [15016] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-20T21:53:57.903Z] [runtime-status] [15016] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[info] +  functions[api]: http function initialized (http://localhost:5001/dbtronics-79c66/us-central1/api).
+[info] +  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-04-20T21:54:00.126Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: IDLE 
+[debug] [2020-04-20T23:25:32.648Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-20T23:25:32.648Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-20T23:25:32.649Z] Accepted request POST /dbtronics-79c66/us-central1/api/signup --> api
+[debug] [2020-04-20T23:25:32.657Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-20T23:25:32.657Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-20T23:25:32.657Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-20T23:25:32.657Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
+[debug] [2020-04-20T23:25:32.658Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: BUSY 
+[debug] [2020-04-20T23:25:33.656Z] [runtime-status] [1336] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.10.1"} 
+[debug] [2020-04-20T23:25:33.661Z] [runtime-status] [1336] Disabled runtime features: undefined 
+[debug] [2020-04-20T23:25:33.678Z] [runtime-status] [1336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-20T23:25:33.682Z] [runtime-status] [1336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-20T23:25:33.688Z] [runtime-status] [1336] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-20T23:25:33.889Z] [runtime-status] [1336] Checked functions.config() {"config":{}} 
+[debug] [2020-04-20T23:25:33.890Z] [runtime-status] [1336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-20T23:25:33.890Z] [runtime-status] [1336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-20T23:25:33.890Z] [runtime-status] [1336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-20T23:25:33.891Z] [runtime-status] [1336] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-20T23:25:34.641Z] [runtime-status] [1336] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[debug] [2020-04-20T23:25:36.905Z] [runtime-status] [1336] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-20T23:25:36.910Z] [runtime-status] [1336] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-20T23:25:36.911Z] [runtime-status] [1336] Running api in mode HTTPS 
+[debug] [2020-04-20T23:25:36.920Z] [runtime-status] [1336] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
+[debug] [2020-04-20T23:25:36.924Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-20T23:25:37.014Z] [runtime-status] [1336] Ephemeral server handling POST request 
+[debug] [2020-04-20T23:25:37.028Z] [runtime-status] [1336] Ephemeral server survived. 
+[debug] [2020-04-20T23:25:37.549Z] Apr 21, 2020 1:25:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+
+[info] >  [u [Error]: The email address is already in use by another account.] { {"user":"[u [Error]: The email address is already in use by another account.] {"}
+[info] >    code: 'auth/email-already-in-use', {"user":"  code: 'auth/email-already-in-use',"}
+[info] >    message: 'The email address is already in use by another account.', {"user":"  message: 'The email address is already in use by another account.',"}
+[info] >    a: null {"user":"  a: null"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "api" in ~4s
+[debug] [2020-04-20T23:25:42.078Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: IDLE 
+[debug] [2020-04-20T23:25:42.079Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-20T23:26:00.974Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-20T23:26:00.975Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-20T23:26:00.976Z] Accepted request POST /dbtronics-79c66/us-central1/api/signup --> api
+[debug] [2020-04-20T23:26:00.976Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-20T23:26:00.977Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
+[debug] [2020-04-20T23:26:00.977Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: BUSY 
+[debug] [2020-04-20T23:26:00.979Z] [runtime-status] [1336] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-20T23:26:00.981Z] [runtime-status] [1336] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-20T23:26:00.981Z] [runtime-status] [1336] Running api in mode HTTPS 
+[debug] [2020-04-20T23:26:00.981Z] [runtime-status] [1336] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
+[debug] [2020-04-20T23:26:00.982Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-20T23:26:00.984Z] [runtime-status] [1336] Ephemeral server handling POST request 
+[debug] [2020-04-20T23:26:00.985Z] [runtime-status] [1336] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~3s
+[debug] [2020-04-20T23:26:03.986Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: IDLE 
+[debug] [2020-04-20T23:26:03.986Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-21T08:04:37.445Z] Apr 21, 2020 10:04:37 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+
+
+[debug] [2020-04-21T08:04:37.459Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: exited 
+[debug] [2020-04-21T08:04:37.460Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: FINISHED 
+[debug] [2020-04-21T08:04:37.488Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: exited 
+[debug] [2020-04-21T08:04:37.489Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: FINISHED 
+[error] 
