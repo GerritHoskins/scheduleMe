@@ -1,26 +1,26 @@
-[debug] [2020-04-20T21:53:29.490Z] ----------------------------------------------------------------------
-[debug] [2020-04-20T21:53:29.497Z] Command:       C:\Program Files\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2020-04-20T21:53:29.498Z] CLI Version:   8.1.1
-[debug] [2020-04-20T21:53:29.498Z] Platform:      win32
-[debug] [2020-04-20T21:53:29.498Z] Node Version:  v13.10.1
-[debug] [2020-04-20T21:53:29.500Z] Time:          Mon Apr 20 2020 23:53:29 GMT+0200 (Central European Summer Time)
-[debug] [2020-04-20T21:53:29.500Z] ----------------------------------------------------------------------
-[debug] [2020-04-20T21:53:29.500Z] 
-[debug] [2020-04-20T21:53:29.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-20T21:53:29.523Z] > authorizing via signed-in user
+[debug] [2020-04-21T13:44:08.734Z] ----------------------------------------------------------------------
+[debug] [2020-04-21T13:44:08.738Z] Command:       C:\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2020-04-21T13:44:08.740Z] CLI Version:   8.1.1
+[debug] [2020-04-21T13:44:08.740Z] Platform:      win32
+[debug] [2020-04-21T13:44:08.740Z] Node Version:  v13.13.0
+[debug] [2020-04-21T13:44:08.741Z] Time:          Tue Apr 21 2020 15:44:08 GMT+0200 (Central European Summer Time)
+[debug] [2020-04-21T13:44:08.741Z] ----------------------------------------------------------------------
+[debug] [2020-04-21T13:44:08.742Z] 
+[debug] [2020-04-21T13:44:08.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-21T13:44:08.756Z] > authorizing via signed-in user
 [info] i  emulators: Starting emulators: functions, firestore, database, hosting
-[debug] [2020-04-20T21:53:31.631Z] [hub] writing locator at C:\Users\gsharpp\AppData\Local\Temp\hub-dbtronics-79c66.json
+[debug] [2020-04-21T13:44:10.842Z] [hub] writing locator at C:\Users\gsharpp\AppData\Local\Temp\hub-dbtronics-79c66.json
 [info] +  hub: emulator hub started at http://localhost:4400
 [warn] !  Your requested "node" version "8" doesn't match your global version "13"
 [info] +  functions: functions emulator started at http://localhost:5001
 [warn] !  firestore: Cloud Firestore rules file C:\dev\appointment-scheduler-master\firestore.rules specified in firebase.json does not exist.
 [warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration.
-[debug] [2020-04-20T21:53:35.830Z] Ignoring unsupported arg: projectId
-[debug] [2020-04-20T21:53:35.831Z] Ignoring unsupported arg: auto_download
-[debug] [2020-04-20T21:53:35.831Z] Starting firestore emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\gsharpp\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.11.3.jar","--host","localhost","--port",5002,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false}
+[debug] [2020-04-21T13:44:14.974Z] Ignoring unsupported arg: projectId
+[debug] [2020-04-21T13:44:14.974Z] Ignoring unsupported arg: auto_download
+[debug] [2020-04-21T13:44:14.974Z] Starting firestore emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\gsharpp\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.11.3.jar","--host","localhost","--port",5002,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false}
 [info] i  firestore: firestore emulator logging to firestore-debug.log
-[debug] [2020-04-20T21:53:41.786Z] API endpoint: http://
-[debug] [2020-04-20T21:53:41.789Z] localhost:5002
+[debug] [2020-04-21T13:44:18.579Z] API endpoint: http://localhost:5002
+[debug] [2020-04-21T13:44:18.580Z] 
 If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
 
    export FIRESTORE_EMULATOR_HOST=localhost:5002
@@ -32,104 +32,484 @@ Dev App Server is now running.
 [info] i  firestore: For testing set FIRESTORE_EMULATOR_HOST=localhost:5002
 [warn] !  database: Did not find a Realtime Database rules file specified in a firebase.json config file.
 [warn] !  database: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration.
-[debug] [2020-04-20T21:53:44.107Z] Ignoring unsupported arg: projectId
-[debug] [2020-04-20T21:53:44.107Z] Ignoring unsupported arg: auto_download
-[debug] [2020-04-20T21:53:44.108Z] Starting database emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\gsharpp\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.4.1.jar","--host","localhost","--port",9002,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false}
+[debug] [2020-04-21T13:44:20.890Z] Ignoring unsupported arg: projectId
+[debug] [2020-04-21T13:44:20.891Z] Ignoring unsupported arg: auto_download
+[debug] [2020-04-21T13:44:20.891Z] Starting database emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\gsharpp\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.4.1.jar","--host","localhost","--port",9002,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false}
 [info] i  database: database emulator logging to database-debug.log
-[debug] [2020-04-20T21:53:50.120Z] 23:53:50.113 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[debug] [2020-04-21T13:44:24.474Z] 15:44:24.471 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
 
-[debug] [2020-04-20T21:53:50.701Z] 23:53:50.701 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9002
+[debug] [2020-04-21T13:44:24.889Z] 15:44:24.888 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9002
 
 [info] +  database: database emulator started at http://localhost:9002
 [info] i  database: For testing set FIREBASE_DATABASE_EMULATOR_HOST=localhost:9002
-[debug] [2020-04-20T21:53:53.477Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-04-20T21:53:53.477Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2020-04-21T13:44:27.948Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-21T13:44:27.949Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2020-04-20T21:53:54.069Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 21:53:53 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-04-20T21:53:54.084Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/dbtronics-79c66/webApps/-/config  
+[debug] [2020-04-21T13:44:28.229Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Apr 2020 13:44:28 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-21T13:44:28.242Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/dbtronics-79c66/webApps/-/config  
  
-[debug] [2020-04-20T21:53:55.115Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 21:53:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-21T13:44:29.152Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Apr 2020 13:44:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] i  hosting: Serving hosting files from: dist
 [info] +  hosting: Local server: http://localhost:5000
 [info] +  hosting: hosting emulator started at http://localhost:5000
 [info] i  functions: Watching "C:\dev\appointment-scheduler-master\functions" for Cloud Functions...
-[debug] [2020-04-20T21:53:55.590Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-04-20T21:53:55.591Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
-[debug] [2020-04-20T21:53:55.591Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-04-20T21:53:55.591Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\15016 
-[debug] [2020-04-20T21:53:55.592Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: BUSY 
-[debug] [2020-04-20T21:53:56.927Z] [runtime-status] [15016] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.10.1"} 
-[debug] [2020-04-20T21:53:56.934Z] [runtime-status] [15016] Disabled runtime features: undefined 
-[debug] [2020-04-20T21:53:56.943Z] [runtime-status] [15016] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
-[debug] [2020-04-20T21:53:56.952Z] [runtime-status] [15016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-21T13:44:29.319Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-21T13:44:29.320Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-21T13:44:29.320Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-21T13:44:29.322Z] [worker-~diagnostic~-11ca9197-6bb2-48ad-be74-46bbe7c00496]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\15956 
+[debug] [2020-04-21T13:44:29.324Z] [worker-~diagnostic~-11ca9197-6bb2-48ad-be74-46bbe7c00496]: BUSY 
+[debug] [2020-04-21T13:44:30.267Z] [runtime-status] [15956] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-04-21T13:44:30.270Z] [runtime-status] [15956] Disabled runtime features: undefined 
+[debug] [2020-04-21T13:44:30.286Z] [runtime-status] [15956] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-21T13:44:30.289Z] [runtime-status] [15956] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
 [warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
-[debug] [2020-04-20T21:53:56.955Z] [runtime-status] [15016] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-04-20T21:53:57.162Z] [runtime-status] [15016] Checked functions.config() {"config":{}} 
-[debug] [2020-04-20T21:53:57.163Z] [runtime-status] [15016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
-[debug] [2020-04-20T21:53:57.164Z] [runtime-status] [15016] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
-[debug] [2020-04-20T21:53:57.165Z] [runtime-status] [15016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
-[debug] [2020-04-20T21:53:57.165Z] [runtime-status] [15016] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
-[debug] [2020-04-20T21:53:57.903Z] [runtime-status] [15016] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[debug] [2020-04-21T13:44:30.293Z] [runtime-status] [15956] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-21T13:44:30.430Z] [runtime-status] [15956] Checked functions.config() {"config":{}} 
+[debug] [2020-04-21T13:44:30.433Z] [runtime-status] [15956] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-21T13:44:30.436Z] [runtime-status] [15956] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-21T13:44:30.437Z] [runtime-status] [15956] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-21T13:44:30.438Z] [runtime-status] [15956] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-21T13:44:30.868Z] [runtime-status] [15956] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
 [info] +  functions[api]: http function initialized (http://localhost:5001/dbtronics-79c66/us-central1/api).
 [info] +  emulators: All emulators started, it is now safe to connect.
-[debug] [2020-04-20T21:54:00.126Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: IDLE 
-[debug] [2020-04-20T23:25:32.648Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-04-20T23:25:32.648Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-04-20T23:25:32.649Z] Accepted request POST /dbtronics-79c66/us-central1/api/signup --> api
-[debug] [2020-04-20T23:25:32.657Z] [worker-pool] addWorker(api) 
-[debug] [2020-04-20T23:25:32.657Z] [worker-pool] Adding worker with key api, total=1 
-[debug] [2020-04-20T23:25:32.657Z] [worker-pool] submitWork(triggerId=api) 
-[debug] [2020-04-20T23:25:32.657Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
-[debug] [2020-04-20T23:25:32.658Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: BUSY 
-[debug] [2020-04-20T23:25:33.656Z] [runtime-status] [1336] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.10.1"} 
-[debug] [2020-04-20T23:25:33.661Z] [runtime-status] [1336] Disabled runtime features: undefined 
-[debug] [2020-04-20T23:25:33.678Z] [runtime-status] [1336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
-[debug] [2020-04-20T23:25:33.682Z] [runtime-status] [1336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-21T13:44:32.242Z] [worker-~diagnostic~-11ca9197-6bb2-48ad-be74-46bbe7c00496]: IDLE 
+[debug] [2020-04-22T09:04:22.765Z] File C:\dev\appointment-scheduler-master\functions\index.js changed, reloading triggers 
+[debug] [2020-04-22T09:04:23.776Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-22T09:04:23.777Z] [worker-~diagnostic~-11ca9197-6bb2-48ad-be74-46bbe7c00496]: FINISHING 
+[debug] [2020-04-22T09:04:23.800Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-22T09:04:23.800Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-22T09:04:23.801Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-22T09:04:23.802Z] [worker-~diagnostic~-283732d7-78b5-4796-b4ed-9540a09e7247]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\19488 
+[debug] [2020-04-22T09:04:23.803Z] [worker-~diagnostic~-283732d7-78b5-4796-b4ed-9540a09e7247]: BUSY 
+[debug] [2020-04-22T09:04:23.806Z] [worker-~diagnostic~-11ca9197-6bb2-48ad-be74-46bbe7c00496]: exited 
+[debug] [2020-04-22T09:04:23.806Z] [worker-~diagnostic~-11ca9197-6bb2-48ad-be74-46bbe7c00496]: FINISHED 
+[debug] [2020-04-22T09:04:24.576Z] [runtime-status] [19488] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-04-22T09:04:24.584Z] [runtime-status] [19488] Disabled runtime features: undefined 
+[debug] [2020-04-22T09:04:24.593Z] [runtime-status] [19488] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:04:24.601Z] [runtime-status] [19488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
 [warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
-[debug] [2020-04-20T23:25:33.688Z] [runtime-status] [1336] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-04-20T23:25:33.889Z] [runtime-status] [1336] Checked functions.config() {"config":{}} 
-[debug] [2020-04-20T23:25:33.890Z] [runtime-status] [1336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
-[debug] [2020-04-20T23:25:33.890Z] [runtime-status] [1336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
-[debug] [2020-04-20T23:25:33.890Z] [runtime-status] [1336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
-[debug] [2020-04-20T23:25:33.891Z] [runtime-status] [1336] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
-[debug] [2020-04-20T23:25:34.641Z] [runtime-status] [1336] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
-[debug] [2020-04-20T23:25:36.905Z] [runtime-status] [1336] Trigger "api" has been found, beginning invocation! 
+[debug] [2020-04-22T09:04:24.746Z] [runtime-status] [19488] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-22T09:04:24.746Z] [runtime-status] [19488] Checked functions.config() {"config":{}} 
+[debug] [2020-04-22T09:04:24.747Z] [runtime-status] [19488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:04:24.751Z] [runtime-status] [19488] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:04:24.752Z] [runtime-status] [19488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:04:24.754Z] [runtime-status] [19488] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-22T09:04:25.340Z] [runtime-status] [19488] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[debug] [2020-04-22T09:04:26.954Z] [worker-~diagnostic~-283732d7-78b5-4796-b4ed-9540a09e7247]: IDLE 
+[debug] [2020-04-22T09:05:16.633Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:05:16.634Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:05:16.634Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:05:16.635Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-22T09:05:16.640Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-22T09:05:16.640Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-22T09:05:16.640Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:05:16.640Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:05:16.640Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: BUSY 
+[debug] [2020-04-22T09:05:17.351Z] [runtime-status] [20432] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-04-22T09:05:17.361Z] [runtime-status] [20432] Disabled runtime features: undefined 
+[debug] [2020-04-22T09:05:17.372Z] [runtime-status] [20432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:05:17.376Z] [runtime-status] [20432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-22T09:05:17.379Z] [runtime-status] [20432] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-22T09:05:17.456Z] [runtime-status] [20432] Checked functions.config() {"config":{}} 
+[debug] [2020-04-22T09:05:17.457Z] [runtime-status] [20432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:05:17.459Z] [runtime-status] [20432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:05:17.460Z] [runtime-status] [20432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:05:17.460Z] [runtime-status] [20432] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-22T09:05:17.728Z] [runtime-status] [20432] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[debug] [2020-04-22T09:05:18.612Z] [runtime-status] [20432] Trigger "api" has been found, beginning invocation! 
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-04-20T23:25:36.910Z] [runtime-status] [1336] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
-[debug] [2020-04-20T23:25:36.911Z] [runtime-status] [1336] Running api in mode HTTPS 
-[debug] [2020-04-20T23:25:36.920Z] [runtime-status] [1336] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
-[debug] [2020-04-20T23:25:36.924Z] [functions] Runtime ready! Sending request! 
-[debug] [2020-04-20T23:25:37.014Z] [runtime-status] [1336] Ephemeral server handling POST request 
-[debug] [2020-04-20T23:25:37.028Z] [runtime-status] [1336] Ephemeral server survived. 
-[debug] [2020-04-20T23:25:37.549Z] Apr 21, 2020 1:25:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+[debug] [2020-04-22T09:05:18.613Z] [runtime-status] [20432] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:05:18.613Z] [runtime-status] [20432] Running api in mode HTTPS 
+[debug] [2020-04-22T09:05:18.617Z] [runtime-status] [20432] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:05:18.621Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:05:18.636Z] [runtime-status] [20432] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-04-22T09:05:18.794Z] [runtime-status] [20432] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:05:18.950Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: IDLE 
+[debug] [2020-04-22T09:05:18.950Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:05:38.977Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:05:38.977Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:05:38.977Z] Accepted request POST /dbtronics-79c66/us-central1/api/login --> api
+[debug] [2020-04-22T09:05:38.977Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:05:38.978Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:05:38.978Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: BUSY 
+[debug] [2020-04-22T09:05:38.978Z] [runtime-status] [20432] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:05:38.979Z] [runtime-status] [20432] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:05:38.979Z] [runtime-status] [20432] Running api in mode HTTPS 
+[debug] [2020-04-22T09:05:38.980Z] [runtime-status] [20432] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:05:38.982Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:05:39.010Z] [runtime-status] [20432] Ephemeral server handling POST request 
+[debug] [2020-04-22T09:05:39.053Z] [runtime-status] [20432] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~2s
+[debug] [2020-04-22T09:05:41.341Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: IDLE 
+[debug] [2020-04-22T09:05:41.342Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:05:46.396Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:05:46.396Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:05:46.396Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:05:46.396Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:05:46.397Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:05:46.397Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: BUSY 
+[debug] [2020-04-22T09:05:46.397Z] [runtime-status] [20432] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:05:46.398Z] [runtime-status] [20432] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:05:46.398Z] [runtime-status] [20432] Running api in mode HTTPS 
+[debug] [2020-04-22T09:05:46.399Z] [runtime-status] [20432] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:05:46.399Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:05:46.401Z] [runtime-status] [20432] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-04-22T09:05:46.517Z] [runtime-status] [20432] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:05:46.638Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: IDLE 
+[debug] [2020-04-22T09:05:46.639Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:06:19.117Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:06:19.117Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:06:19.117Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:06:19.117Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:06:19.117Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:06:19.118Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: BUSY 
+[debug] [2020-04-22T09:06:19.120Z] [runtime-status] [20432] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:06:19.123Z] [runtime-status] [20432] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:06:19.123Z] [runtime-status] [20432] Running api in mode HTTPS 
+[debug] [2020-04-22T09:06:19.123Z] [runtime-status] [20432] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:06:19.124Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:06:19.129Z] [runtime-status] [20432] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-04-22T09:06:19.264Z] [runtime-status] [20432] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:06:19.470Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: IDLE 
+[debug] [2020-04-22T09:06:19.470Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:06:30.822Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:06:30.822Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:06:30.822Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:06:30.823Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:06:30.823Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:06:30.823Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: BUSY 
+[debug] [2020-04-22T09:06:30.823Z] [runtime-status] [20432] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:06:30.824Z] [runtime-status] [20432] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:06:30.825Z] [runtime-status] [20432] Running api in mode HTTPS 
+[debug] [2020-04-22T09:06:30.825Z] [runtime-status] [20432] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:06:30.826Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:06:30.827Z] [runtime-status] [20432] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-04-22T09:06:30.933Z] [runtime-status] [20432] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:06:30.934Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: IDLE 
+[debug] [2020-04-22T09:06:30.934Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:06:37.193Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:06:37.193Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:06:37.193Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:06:37.193Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:06:37.193Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:06:37.193Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: BUSY 
+[debug] [2020-04-22T09:06:37.194Z] [runtime-status] [20432] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:06:37.195Z] [runtime-status] [20432] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:06:37.195Z] [runtime-status] [20432] Running api in mode HTTPS 
+[debug] [2020-04-22T09:06:37.195Z] [runtime-status] [20432] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\20432 
+[debug] [2020-04-22T09:06:37.198Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:06:37.201Z] [runtime-status] [20432] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-04-22T09:06:37.286Z] [runtime-status] [20432] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:06:37.314Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: IDLE 
+[debug] [2020-04-22T09:06:37.315Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:08:00.802Z] File C:\dev\appointment-scheduler-master\functions\index.js changed, reloading triggers 
+[debug] [2020-04-22T09:08:01.804Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-22T09:08:01.804Z] [worker-~diagnostic~-283732d7-78b5-4796-b4ed-9540a09e7247]: FINISHING 
+[debug] [2020-04-22T09:08:01.804Z] [worker-pool] Shutting down IDLE worker (api) 
+[debug] [2020-04-22T09:08:01.804Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: FINISHING 
+[debug] [2020-04-22T09:08:01.814Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-22T09:08:01.814Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-22T09:08:01.814Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-22T09:08:01.814Z] [worker-~diagnostic~-9ade3e5d-8246-4990-b004-fcc9b904b6e5]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\12948 
+[debug] [2020-04-22T09:08:01.815Z] [worker-~diagnostic~-9ade3e5d-8246-4990-b004-fcc9b904b6e5]: BUSY 
+[debug] [2020-04-22T09:08:01.825Z] [worker-~diagnostic~-283732d7-78b5-4796-b4ed-9540a09e7247]: exited 
+[debug] [2020-04-22T09:08:01.825Z] [worker-~diagnostic~-283732d7-78b5-4796-b4ed-9540a09e7247]: FINISHED 
+[debug] [2020-04-22T09:08:01.828Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: exited 
+[debug] [2020-04-22T09:08:01.829Z] [worker-api-683bdefc-fb75-47ef-a48c-560501306822]: FINISHED 
+[debug] [2020-04-22T09:08:02.626Z] [runtime-status] [12948] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-04-22T09:08:02.632Z] [runtime-status] [12948] Disabled runtime features: undefined 
+[debug] [2020-04-22T09:08:02.642Z] [runtime-status] [12948] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:02.647Z] [runtime-status] [12948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-22T09:08:02.652Z] [runtime-status] [12948] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-22T09:08:02.748Z] [runtime-status] [12948] Checked functions.config() {"config":{}} 
+[debug] [2020-04-22T09:08:02.750Z] [runtime-status] [12948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:02.752Z] [runtime-status] [12948] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:02.754Z] [runtime-status] [12948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:02.756Z] [runtime-status] [12948] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-22T09:08:03.052Z] [runtime-status] [12948] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[debug] [2020-04-22T09:08:03.995Z] [worker-~diagnostic~-9ade3e5d-8246-4990-b004-fcc9b904b6e5]: IDLE 
+[debug] [2020-04-22T09:08:31.569Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:08:31.569Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:08:31.569Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:08:31.569Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-22T09:08:31.569Z] [worker-pool] Cleaned up workers for api: 1 --> 0 
+[debug] [2020-04-22T09:08:31.573Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-22T09:08:31.573Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-22T09:08:31.573Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:08:31.573Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:08:31.573Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:08:32.193Z] [runtime-status] [5088] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-04-22T09:08:32.194Z] [runtime-status] [5088] Disabled runtime features: undefined 
+[debug] [2020-04-22T09:08:32.204Z] [runtime-status] [5088] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:32.212Z] [runtime-status] [5088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-22T09:08:32.214Z] [runtime-status] [5088] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-22T09:08:32.293Z] [runtime-status] [5088] Checked functions.config() {"config":{}} 
+[debug] [2020-04-22T09:08:32.294Z] [runtime-status] [5088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:32.295Z] [runtime-status] [5088] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:32.296Z] [runtime-status] [5088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-22T09:08:32.296Z] [runtime-status] [5088] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-22T09:08:32.572Z] [runtime-status] [5088] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[debug] [2020-04-22T09:08:33.453Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:08:33.454Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:08:33.454Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:08:33.461Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:08:33.467Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:08:33.490Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:08:33.628Z] [runtime-status] [5088] Ephemeral server survived. 
+[debug] [2020-04-22T09:08:34.316Z] Apr 22, 2020 11:08:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected HTTP/2 connection.
 
-[info] >  [u [Error]: The email address is already in use by another account.] { {"user":"[u [Error]: The email address is already in use by another account.] {"}
-[info] >    code: 'auth/email-already-in-use', {"user":"  code: 'auth/email-already-in-use',"}
-[info] >    message: 'The email address is already in use by another account.', {"user":"  message: 'The email address is already in use by another account.',"}
-[info] >    a: null {"user":"  a: null"}
-[info] >  } {"user":"}"}
-[info] i  functions: Finished "api" in ~4s
-[debug] [2020-04-20T23:25:42.078Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: IDLE 
-[debug] [2020-04-20T23:25:42.079Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-04-20T23:26:00.974Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-04-20T23:26:00.975Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-04-20T23:26:00.976Z] Accepted request POST /dbtronics-79c66/us-central1/api/signup --> api
-[debug] [2020-04-20T23:26:00.976Z] [worker-pool] submitWork(triggerId=api) 
-[debug] [2020-04-20T23:26:00.977Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
-[debug] [2020-04-20T23:26:00.977Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: BUSY 
-[debug] [2020-04-20T23:26:00.979Z] [runtime-status] [1336] Trigger "api" has been found, beginning invocation! 
+[info] >  Error while verifying token TypeError: Cannot read property 'data' of undefined {"user":"Error while verifying token TypeError: Cannot read property 'data' of undefined"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\util\auth.js:19:41 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\util\\auth.js:19:41"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:08:35.523Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:08:35.524Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:08:50.144Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:08:50.145Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:08:50.145Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:08:50.145Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:08:50.145Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:08:50.145Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:08:50.146Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
 [info] i  functions: Beginning execution of "api"
-[debug] [2020-04-20T23:26:00.981Z] [runtime-status] [1336] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
-[debug] [2020-04-20T23:26:00.981Z] [runtime-status] [1336] Running api in mode HTTPS 
-[debug] [2020-04-20T23:26:00.981Z] [runtime-status] [1336] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\1336 
-[debug] [2020-04-20T23:26:00.982Z] [functions] Runtime ready! Sending request! 
-[debug] [2020-04-20T23:26:00.984Z] [runtime-status] [1336] Ephemeral server handling POST request 
-[debug] [2020-04-20T23:26:00.985Z] [runtime-status] [1336] Ephemeral server survived. 
-[info] i  functions: Finished "api" in ~3s
-[debug] [2020-04-20T23:26:03.986Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: IDLE 
-[debug] [2020-04-20T23:26:03.986Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-04-21T08:04:37.445Z] Apr 21, 2020 10:04:37 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+[debug] [2020-04-22T09:08:50.147Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:08:50.147Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:08:50.147Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:08:50.148Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:08:50.152Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:08:50.154Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token FirebaseAuthError: Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token. {"user":"Error while verifying token FirebaseAuthError: Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+[info] >      at FirebaseAuthError.FirebaseError [as constructor] (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:42:28) {"user":"    at FirebaseAuthError.FirebaseError [as constructor] (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:42:28)"}
+[info] >      at FirebaseAuthError.PrefixedFirebaseError [as constructor] (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:88:28) {"user":"    at FirebaseAuthError.PrefixedFirebaseError [as constructor] (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:88:28)"}
+[info] >      at new FirebaseAuthError (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:147:16) {"user":"    at new FirebaseAuthError (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:147:16)"}
+[info] >      at FirebaseTokenVerifier.verifyJWTWithProjectId (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\auth\token-verifier.js:166:35) {"user":"    at FirebaseTokenVerifier.verifyJWTWithProjectId (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\auth\\token-verifier.js:166:35)"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\auth\token-verifier.js:102:26 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\auth\\token-verifier.js:102:26"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) { {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5) {"}
+[info] >    errorInfo: { {"user":"  errorInfo: {"}
+[info] >      code: 'auth/argument-error', {"user":"    code: 'auth/argument-error',"}
+[info] >      message: 'Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.' {"user":"    message: 'Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.'"}
+[info] >    }, {"user":"  },"}
+[info] >    codePrefix: 'auth' {"user":"  codePrefix: 'auth'"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:08:51.358Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:08:51.358Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:10:38.053Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:10:38.053Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:10:38.053Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/testnr --> api
+[debug] [2020-04-22T09:10:38.053Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:10:38.053Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:10:38.053Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:10:38.054Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:10:38.055Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:10:38.055Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:10:38.055Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:10:38.056Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:10:38.058Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:10:38.061Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:10:38.251Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:10:38.251Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:10:56.005Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:10:56.006Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:10:56.006Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:10:56.006Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:10:56.006Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:10:56.006Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:10:56.007Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:10:56.007Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:10:56.008Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:10:56.008Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:10:56.008Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:10:56.010Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:10:56.011Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token FirebaseAuthError: Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token. {"user":"Error while verifying token FirebaseAuthError: Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+[info] >      at FirebaseAuthError.FirebaseError [as constructor] (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:42:28) {"user":"    at FirebaseAuthError.FirebaseError [as constructor] (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:42:28)"}
+[info] >      at FirebaseAuthError.PrefixedFirebaseError [as constructor] (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:88:28) {"user":"    at FirebaseAuthError.PrefixedFirebaseError [as constructor] (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:88:28)"}
+[info] >      at new FirebaseAuthError (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:147:16) {"user":"    at new FirebaseAuthError (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:147:16)"}
+[info] >      at FirebaseTokenVerifier.verifyJWTWithProjectId (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\auth\token-verifier.js:166:35) {"user":"    at FirebaseTokenVerifier.verifyJWTWithProjectId (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\auth\\token-verifier.js:166:35)"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\auth\token-verifier.js:102:26 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\auth\\token-verifier.js:102:26"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) { {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5) {"}
+[info] >    errorInfo: { {"user":"  errorInfo: {"}
+[info] >      code: 'auth/argument-error', {"user":"    code: 'auth/argument-error',"}
+[info] >      message: 'Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.' {"user":"    message: 'Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.'"}
+[info] >    }, {"user":"  },"}
+[info] >    codePrefix: 'auth' {"user":"  codePrefix: 'auth'"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:10:57.161Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:10:57.161Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:11:05.397Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:11:05.397Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:11:05.397Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:11:05.397Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:11:05.397Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:11:05.397Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:11:05.398Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:11:05.398Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:11:05.399Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:11:05.399Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:11:05.399Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:11:05.400Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:11:05.401Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token TypeError: Cannot read property 'data' of undefined {"user":"Error while verifying token TypeError: Cannot read property 'data' of undefined"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\util\auth.js:19:41 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\util\\auth.js:19:41"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:11:05.664Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:11:05.664Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:11:24.696Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:11:24.696Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:11:24.697Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/?user=testnr --> api
+[debug] [2020-04-22T09:11:24.697Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:11:24.697Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:11:24.697Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:11:24.697Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:11:24.698Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:11:24.698Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:11:24.699Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:11:24.703Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:11:24.705Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:11:24.705Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token TypeError: Cannot read property 'data' of undefined {"user":"Error while verifying token TypeError: Cannot read property 'data' of undefined"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\util\auth.js:19:41 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\util\\auth.js:19:41"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:11:24.847Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:11:24.847Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:12:17.663Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:12:17.663Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:12:17.663Z] Accepted request POST /dbtronics-79c66/us-central1/api/login --> api
+[debug] [2020-04-22T09:12:17.663Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:12:17.663Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:12:17.663Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:12:17.664Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:12:17.665Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:12:17.665Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:12:17.665Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:12:17.666Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:12:17.703Z] [runtime-status] [5088] Ephemeral server handling POST request 
+[debug] [2020-04-22T09:12:17.728Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:12:18.888Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:12:18.888Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:12:41.081Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:12:41.081Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:12:41.081Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/?user=testnr --> api
+[debug] [2020-04-22T09:12:41.081Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:12:41.081Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:12:41.081Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:12:41.082Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:12:41.083Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:12:41.083Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:12:41.084Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:12:41.084Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:12:41.085Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:12:41.086Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token TypeError: Cannot read property 'data' of undefined {"user":"Error while verifying token TypeError: Cannot read property 'data' of undefined"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\util\auth.js:19:41 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\util\\auth.js:19:41"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:12:41.214Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:12:41.214Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:12:51.336Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:12:51.336Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:12:51.336Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:12:51.336Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:12:51.336Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:12:51.336Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:12:51.337Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:12:51.339Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:12:51.340Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:12:51.341Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:12:51.342Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:12:51.343Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:12:51.343Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token TypeError: Cannot read property 'data' of undefined {"user":"Error while verifying token TypeError: Cannot read property 'data' of undefined"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\util\auth.js:19:41 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\util\\auth.js:19:41"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:12:51.499Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:12:51.499Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:13:09.507Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:13:09.507Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:13:09.507Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:13:09.507Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:13:09.507Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:13:09.507Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:13:09.508Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:13:09.511Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:13:09.511Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:13:09.512Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:13:09.512Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:13:09.513Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:13:09.514Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token TypeError: Cannot read property 'data' of undefined {"user":"Error while verifying token TypeError: Cannot read property 'data' of undefined"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\util\auth.js:19:41 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\util\\auth.js:19:41"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:13:09.615Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:13:09.616Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:13:14.666Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-22T09:13:14.666Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-22T09:13:14.666Z] Accepted request GET /dbtronics-79c66/us-central1/api/user/ --> api
+[debug] [2020-04-22T09:13:14.666Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-22T09:13:14.666Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:13:14.666Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: BUSY 
+[debug] [2020-04-22T09:13:14.668Z] [runtime-status] [5088] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-22T09:13:14.671Z] [runtime-status] [5088] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-22T09:13:14.671Z] [runtime-status] [5088] Running api in mode HTTPS 
+[debug] [2020-04-22T09:13:14.671Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\5088 
+[debug] [2020-04-22T09:13:14.672Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-22T09:13:14.673Z] [runtime-status] [5088] Ephemeral server handling GET request 
+[debug] [2020-04-22T09:13:14.673Z] [runtime-status] [5088] Ephemeral server survived. 
+[info] >  Error while verifying token FirebaseAuthError: Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token. {"user":"Error while verifying token FirebaseAuthError: Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+[info] >      at FirebaseAuthError.FirebaseError [as constructor] (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:42:28) {"user":"    at FirebaseAuthError.FirebaseError [as constructor] (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:42:28)"}
+[info] >      at FirebaseAuthError.PrefixedFirebaseError [as constructor] (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:88:28) {"user":"    at FirebaseAuthError.PrefixedFirebaseError [as constructor] (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:88:28)"}
+[info] >      at new FirebaseAuthError (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\utils\error.js:147:16) {"user":"    at new FirebaseAuthError (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\utils\\error.js:147:16)"}
+[info] >      at FirebaseTokenVerifier.verifyJWTWithProjectId (C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\auth\token-verifier.js:166:35) {"user":"    at FirebaseTokenVerifier.verifyJWTWithProjectId (C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\auth\\token-verifier.js:166:35)"}
+[info] >      at C:\dev\appointment-scheduler-master\functions\node_modules\firebase-admin\lib\auth\token-verifier.js:102:26 {"user":"    at C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\auth\\token-verifier.js:102:26"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) { {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5) {"}
+[info] >    errorInfo: { {"user":"  errorInfo: {"}
+[info] >      code: 'auth/argument-error', {"user":"    code: 'auth/argument-error',"}
+[info] >      message: 'Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.' {"user":"    message: 'Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.'"}
+[info] >    }, {"user":"  },"}
+[info] >    codePrefix: 'auth' {"user":"  codePrefix: 'auth'"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-22T09:13:15.318Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: IDLE 
+[debug] [2020-04-22T09:13:15.318Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-22T09:24:30.152Z] File C:\dev\appointment-scheduler-master\functions\APIs\users.js changed, reloading triggers 
+[debug] [2020-04-22T09:24:31.013Z] Apr 22, 2020 11:24:31 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
 WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
 java.io.IOException: An existing connection was forcibly closed by the remote host
 	at sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -151,8 +531,8 @@ java.io.IOException: An existing connection was forcibly closed by the remote ho
 	at java.lang.Thread.run(Unknown Source)
 
 
-[debug] [2020-04-21T08:04:37.459Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: exited 
-[debug] [2020-04-21T08:04:37.460Z] [worker-api-58678d5b-840e-4399-be0d-116e036f72b1]: FINISHED 
-[debug] [2020-04-21T08:04:37.488Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: exited 
-[debug] [2020-04-21T08:04:37.489Z] [worker-~diagnostic~-d0172d0e-57f4-443b-b0a6-119072ae9aa0]: FINISHED 
+[debug] [2020-04-22T09:24:31.033Z] [worker-~diagnostic~-9ade3e5d-8246-4990-b004-fcc9b904b6e5]: exited 
+[debug] [2020-04-22T09:24:31.034Z] [worker-~diagnostic~-9ade3e5d-8246-4990-b004-fcc9b904b6e5]: FINISHED 
+[debug] [2020-04-22T09:24:31.037Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: exited 
+[debug] [2020-04-22T09:24:31.037Z] [worker-api-be2d3f15-7fd9-4e61-b038-394ac716b2ef]: FINISHED 
 [error] 
