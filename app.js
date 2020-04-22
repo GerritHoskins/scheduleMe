@@ -1,4 +1,3 @@
-//import "firebase/database";
 const express = require('express')
 const path = require('path')
 const morgan = require('morgan')
@@ -11,42 +10,11 @@ const Cosmic = require('cosmicjs')
 const twilio = require('twilio')
 const moment = require('moment')
 const axios = require('axios')
-const firebase = require('firebase')
-const reduxfb = require('react-redux-firebase')
-const createStore = require('./src/Store/createStore')
-const Provider = require("react-redux")
 
+const app = express()
 const env = process.env.NODE_ENV || 'development'
 
-const functions = require('firebase-functions');
-const app = express()
-
-//const auth = require('./util/auth');
-const {
-    loginUser,
-    signUpUser
-} = require('./APIs/users')
-
-// Users
-app.post('/login', loginUser);
-app.post('/signup', signUpUser);
-
-const {
-    getAllTodos,
-    postOneTodo,
-    deleteTodo,
-    editTodo   
-} = require('./APIs/todos')
-
-app.post('/todo', postOneTodo);
-app.get('/todos', getAllTodos);
-app.delete('/todo/:todoId', deleteTodo);
-app.put('/todo/:todoId', editTodo);
-
-
-exports.api = functions.https.onRequest(app);
-
-/* app.set('trust proxy', 1)
+app.set('trust proxy', 1)
 app.use(session({
   secret: 'sjcimsoc',
   resave: false,
@@ -58,10 +26,10 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
-app.set('port', process.env.PORT || 3000) */
+app.set('port', process.env.PORT || 3000)
 
 //handle requests for new appointments
-/* app.post('/api/appointments', (req, res) => {
+app.post('/api/appointments', (req, res) => {
   const twilioSid = config.twilio.sid
   const twilioAuth = config.twilio.auth
   const twilioClient = twilio(twilioSid, twilioAuth)
@@ -140,4 +108,3 @@ app.get('*', (req, res) => {
 http.createServer(app).listen(app.get('port'), () =>
   console.log('Server running at: ' + app.get('port'))
 )
- */
