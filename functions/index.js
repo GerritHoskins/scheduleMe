@@ -1,5 +1,4 @@
 //index.js
-
 const functions = require('firebase-functions');
 const app = require('express')();
 const auth = require('./util/auth');
@@ -24,8 +23,7 @@ const {
     getOneTodo,
     postOneTodo,
     deleteTodo,
-    editTodo,
-   
+    editTodo   
 } = require('./APIs/todos')
 
 app.get('/todos', auth, getAllTodos);
