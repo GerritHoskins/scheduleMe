@@ -1,4 +1,4 @@
-//admin.js
+/* //admin.js
 const admin = require('firebase-admin');
 const serviceAccount = require("../../dbtronics.json");
 
@@ -8,4 +8,11 @@ admin.initializeApp({
 });
 
 const db = admin.firestore();
+module.exports = { admin, db }; */
+const admin = require('firebase-admin');
+
+admin.initializeApp();
+
+const db = admin.firestore();
+
 module.exports = { admin, db };

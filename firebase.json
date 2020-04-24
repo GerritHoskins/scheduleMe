@@ -26,16 +26,16 @@
   },
   "emulators": {
     "firestore": {
-      "port": "5002"
+      "port": "5013"
     },
     "functions": {
-      "port": "5001"
+      "port": "5011"
     },
     "database": {
-      "port": "9002"
+      "port": "9012"
     },
     "hosting": {
-      "port": "5000"
+      "port": "5010"
     }
   }
 }
