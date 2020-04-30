@@ -10,6 +10,13 @@ const {
     editTodo
 } = require('./APIs/todos')
 
+// Todos
+app.get('/todos', auth, getAllTodos);
+app.get('/todo/:todoId', auth, getOneTodo);
+app.post('/todo',auth, postOneTodo);
+app.delete('/todo/:todoId',auth, deleteTodo);
+app.put('/todo/:todoId',auth, editTodo);
+
 const { 
     loginUser,
     signUpUser,
@@ -18,12 +25,6 @@ const {
     updateUserDetails
 } = require('./APIs/users')
 
-// Todos
-app.get('/todos', auth, getAllTodos);
-app.get('/todo/:todoId', auth, getOneTodo);
-app.post('/todo',auth, postOneTodo);
-app.delete('/todo/:todoId',auth, deleteTodo);
-app.put('/todo/:todoId',auth, editTodo);
 
 // Users
 app.post('/login', loginUser);

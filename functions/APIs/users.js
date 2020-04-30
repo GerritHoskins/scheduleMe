@@ -151,7 +151,7 @@ exports.uploadProfilePhoto = (request, response) => {
 			.then(() => {
 				const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${imageFileName}?alt=media`;
 				return db.doc(`/users/${request.user.username}`).update({
-					imageUrl
+					imageUrl : imageUrl
 				});
 			})
 			.then(() => {
@@ -184,7 +184,7 @@ exports.getUserDetail = (request, response) => {
 
 exports.updateUserDetails = (request, response) => {
     let document = db.collection('users').doc(`${request.user.username}`);
-    document.update(request.body)
+    document.update({body : request.body})
     .then(()=> {
         response.json({message: 'Updated successfully'});
     })
