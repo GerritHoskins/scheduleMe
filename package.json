@@ -1,6 +1,7 @@
 {
-  "name": "ScheduleMe",
-  "version": "1.0.0",
+  "name": "schedule-me",
+  "version": "0.1.0",
+  "private": true,
   "main": "index.js",
   "license": "MIT",
   "scripts": {

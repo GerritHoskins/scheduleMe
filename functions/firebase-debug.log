@@ -1,28 +1,330 @@
-[debug] [2020-04-30T12:30:31.727Z] ----------------------------------------------------------------------
-[debug] [2020-04-30T12:30:31.730Z] Command:       C:\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
-[debug] [2020-04-30T12:30:31.730Z] CLI Version:   8.2.0
-[debug] [2020-04-30T12:30:31.730Z] Platform:      win32
-[debug] [2020-04-30T12:30:31.730Z] Node Version:  v13.13.0
-[debug] [2020-04-30T12:30:31.735Z] Time:          Thu Apr 30 2020 14:30:31 GMT+0200 (Central European Summer Time)
-[debug] [2020-04-30T12:30:31.735Z] ----------------------------------------------------------------------
-[debug] [2020-04-30T12:30:31.735Z] 
-[debug] [2020-04-30T12:30:31.751Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-30T12:30:31.751Z] > authorizing via signed-in user
+[debug] [2020-05-01T16:29:43.272Z] ----------------------------------------------------------------------
+[debug] [2020-05-01T16:29:43.275Z] Command:       C:\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-05-01T16:29:43.276Z] CLI Version:   8.2.0
+[debug] [2020-05-01T16:29:43.277Z] Platform:      win32
+[debug] [2020-05-01T16:29:43.277Z] Node Version:  v13.13.0
+[debug] [2020-05-01T16:29:43.282Z] Time:          Fri May 01 2020 18:29:43 GMT+0200 (Central European Summer Time)
+[debug] [2020-05-01T16:29:43.282Z] ----------------------------------------------------------------------
+[debug] [2020-05-01T16:29:43.282Z] 
+[debug] [2020-05-01T16:29:43.299Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-01T16:29:43.300Z] > authorizing via signed-in user
 [info] i  emulators: Starting emulators: functions
 [warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project dbtronics-79c66. This may result in unexpected behavior.
-[debug] [2020-04-30T12:30:33.875Z] [hub] writing locator at C:\Users\gsharpp\AppData\Local\Temp\hub-dbtronics-79c66.json
+[debug] [2020-05-01T16:29:45.418Z] [hub] writing locator at C:\Users\gsharpp\AppData\Local\Temp\hub-dbtronics-79c66.json
 [info] +  hub: emulator hub started at http://localhost:4400
 [warn] !  Your requested "node" version "8" doesn't match your global version "13"
 [info] +  functions: functions emulator started at http://localhost:5011
 [info] i  functions: Watching "C:\dev\appointment-scheduler-master\functions" for Cloud Functions...
-[debug] [2020-04-30T12:30:35.973Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-04-30T12:30:35.973Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
-[debug] [2020-04-30T12:30:35.974Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-04-30T12:30:35.976Z] [worker-~diagnostic~-505df16f-2fde-4c60-9c43-40c21c6d9a54]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\10212 
-[debug] [2020-04-30T12:30:35.977Z] [worker-~diagnostic~-505df16f-2fde-4c60-9c43-40c21c6d9a54]: BUSY 
-[debug] [2020-04-30T12:30:37.007Z] [runtime-status] [10212] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
-[debug] [2020-04-30T12:30:37.010Z] [runtime-status] [10212] Disabled runtime features: undefined 
-[debug] [2020-04-30T12:30:37.021Z] [runtime-status] [10212] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
-[debug] [2020-04-30T12:30:37.028Z] [runtime-status] [10212] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:29:47.498Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-01T16:29:47.499Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-01T16:29:47.500Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-01T16:29:47.502Z] [worker-~diagnostic~-42e6eba5-a1a7-4cc8-9c46-e9d6872b0f97]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\7044 
+[debug] [2020-05-01T16:29:47.503Z] [worker-~diagnostic~-42e6eba5-a1a7-4cc8-9c46-e9d6872b0f97]: BUSY 
+[debug] [2020-05-01T16:29:48.518Z] [runtime-status] [7044] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T16:29:48.524Z] [runtime-status] [7044] Disabled runtime features: undefined 
+[debug] [2020-05-01T16:29:48.540Z] [runtime-status] [7044] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:29:48.542Z] [runtime-status] [7044] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
 [warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
-[debug] [2020-04-30T12:30:37.034Z] [runtime-status] [10212] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T16:29:48.545Z] [runtime-status] [7044] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T16:29:48.691Z] [runtime-status] [7044] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T16:29:48.694Z] [runtime-status] [7044] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:29:48.696Z] [runtime-status] [7044] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:29:48.696Z] [runtime-status] [7044] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:29:48.696Z] [runtime-status] [7044] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T16:29:49.188Z] [runtime-status] [7044] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[info] +  functions[api]: http function initialized (http://localhost:5011/dbtronics-79c66/us-central1/api).
+[info] +  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-05-01T16:29:51.063Z] [worker-~diagnostic~-42e6eba5-a1a7-4cc8-9c46-e9d6872b0f97]: IDLE 
+[debug] [2020-05-01T16:30:01.106Z] File C:\dev\appointment-scheduler-master\functions\package.json changed, reloading triggers 
+[debug] [2020-05-01T16:30:02.108Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-01T16:30:02.108Z] [worker-~diagnostic~-42e6eba5-a1a7-4cc8-9c46-e9d6872b0f97]: FINISHING 
+[debug] [2020-05-01T16:30:02.136Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-01T16:30:02.137Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-01T16:30:02.138Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-01T16:30:02.139Z] [worker-~diagnostic~-f70e13c9-d5a0-453c-8681-3b98a5ad96c9]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14504 
+[debug] [2020-05-01T16:30:02.139Z] [worker-~diagnostic~-f70e13c9-d5a0-453c-8681-3b98a5ad96c9]: BUSY 
+[debug] [2020-05-01T16:30:02.142Z] [worker-~diagnostic~-42e6eba5-a1a7-4cc8-9c46-e9d6872b0f97]: exited 
+[debug] [2020-05-01T16:30:02.142Z] [worker-~diagnostic~-42e6eba5-a1a7-4cc8-9c46-e9d6872b0f97]: FINISHED 
+[debug] [2020-05-01T16:30:03.479Z] [runtime-status] [14504] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T16:30:03.482Z] [runtime-status] [14504] Disabled runtime features: undefined 
+[debug] [2020-05-01T16:30:03.493Z] [runtime-status] [14504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:03.498Z] [runtime-status] [14504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-01T16:30:03.507Z] [runtime-status] [14504] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T16:30:03.608Z] [runtime-status] [14504] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T16:30:03.609Z] [runtime-status] [14504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:03.610Z] [runtime-status] [14504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:03.611Z] [runtime-status] [14504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:03.611Z] [runtime-status] [14504] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T16:30:04.111Z] [runtime-status] [14504] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-05-01T16:30:05.790Z] [worker-~diagnostic~-f70e13c9-d5a0-453c-8681-3b98a5ad96c9]: IDLE 
+[debug] [2020-05-01T16:30:13.481Z] ----------------------------------------------------------------------
+[debug] [2020-05-01T16:30:13.487Z] Command:       C:\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-05-01T16:30:13.487Z] CLI Version:   8.2.0
+[debug] [2020-05-01T16:30:13.487Z] Platform:      win32
+[debug] [2020-05-01T16:30:13.487Z] Node Version:  v13.13.0
+[debug] [2020-05-01T16:30:13.491Z] Time:          Fri May 01 2020 18:30:13 GMT+0200 (Central European Summer Time)
+[debug] [2020-05-01T16:30:13.492Z] ----------------------------------------------------------------------
+[debug] [2020-05-01T16:30:13.493Z] 
+[debug] [2020-05-01T16:30:13.505Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-01T16:30:13.506Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project dbtronics-79c66. This may result in unexpected behavior.
+[debug] [2020-05-01T16:30:15.619Z] [hub] writing locator at C:\Users\gsharpp\AppData\Local\Temp\hub-dbtronics-79c66.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[info] +  functions: Using node@13 from host.
+[info] +  functions: functions emulator started at http://localhost:5011
+[info] i  functions: Watching "C:\dev\appointment-scheduler-master\functions" for Cloud Functions...
+[debug] [2020-05-01T16:30:17.821Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-01T16:30:17.821Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-01T16:30:17.822Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-01T16:30:17.825Z] [worker-~diagnostic~-0e6c4425-49d0-4ab3-a2a1-2eec9d8ae343]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\11488 
+[debug] [2020-05-01T16:30:17.825Z] [worker-~diagnostic~-0e6c4425-49d0-4ab3-a2a1-2eec9d8ae343]: BUSY 
+[debug] [2020-05-01T16:30:19.321Z] [runtime-status] [11488] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T16:30:19.325Z] [runtime-status] [11488] Disabled runtime features: undefined 
+[debug] [2020-05-01T16:30:19.344Z] [runtime-status] [11488] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:19.347Z] [runtime-status] [11488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-01T16:30:19.350Z] [runtime-status] [11488] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T16:30:19.464Z] [runtime-status] [11488] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T16:30:19.465Z] [runtime-status] [11488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:19.469Z] [runtime-status] [11488] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:19.471Z] [runtime-status] [11488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:30:19.471Z] [runtime-status] [11488] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T16:30:19.845Z] [runtime-status] [11488] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[info] +  functions[api]: http function initialized (http://localhost:5011/dbtronics-79c66/us-central1/api).
+[info] +  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-05-01T16:30:21.076Z] [worker-~diagnostic~-0e6c4425-49d0-4ab3-a2a1-2eec9d8ae343]: IDLE 
+[debug] [2020-05-01T16:31:27.310Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-01T16:31:27.311Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-01T16:31:27.312Z] Accepted request GET /dbtronics-79c66/us-central1/api --> api
+[debug] [2020-05-01T16:31:27.345Z] [worker-pool] addWorker(api) 
+[debug] [2020-05-01T16:31:27.345Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-05-01T16:31:27.345Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-01T16:31:27.346Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\8848 
+[debug] [2020-05-01T16:31:27.346Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: BUSY 
+[debug] [2020-05-01T16:31:28.537Z] [runtime-status] [8848] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T16:31:28.540Z] [runtime-status] [8848] Disabled runtime features: undefined 
+[debug] [2020-05-01T16:31:28.555Z] [runtime-status] [8848] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:31:28.560Z] [runtime-status] [8848] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-01T16:31:28.569Z] [runtime-status] [8848] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T16:31:28.691Z] [runtime-status] [8848] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T16:31:28.692Z] [runtime-status] [8848] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:31:28.694Z] [runtime-status] [8848] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:31:28.696Z] [runtime-status] [8848] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:31:28.698Z] [runtime-status] [8848] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T16:31:29.015Z] [runtime-status] [8848] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-05-01T16:31:30.045Z] [runtime-status] [8848] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-01T16:31:30.048Z] [runtime-status] [8848] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-01T16:31:30.049Z] [runtime-status] [8848] Running api in mode HTTPS 
+[debug] [2020-05-01T16:31:30.056Z] [runtime-status] [8848] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\8848 
+[debug] [2020-05-01T16:31:30.061Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-01T16:31:30.084Z] [runtime-status] [8848] Ephemeral server handling GET request 
+[debug] [2020-05-01T16:31:30.102Z] [runtime-status] [8848] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-01T16:31:30.218Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: IDLE 
+[debug] [2020-05-01T16:31:30.220Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-01T16:32:11.993Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-01T16:32:11.993Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-01T16:32:11.993Z] Accepted request GET /dbtronics-79c66/us-central1/api/user --> api
+[debug] [2020-05-01T16:32:11.993Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-01T16:32:11.994Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\8848 
+[debug] [2020-05-01T16:32:11.994Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: BUSY 
+[debug] [2020-05-01T16:32:11.995Z] [runtime-status] [8848] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-01T16:32:11.999Z] [runtime-status] [8848] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-01T16:32:11.999Z] [runtime-status] [8848] Running api in mode HTTPS 
+[debug] [2020-05-01T16:32:12.000Z] [runtime-status] [8848] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\8848 
+[debug] [2020-05-01T16:32:12.000Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-01T16:32:12.005Z] [runtime-status] [8848] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-05-01T16:32:12.015Z] [runtime-status] [8848] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-01T16:32:12.018Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: IDLE 
+[debug] [2020-05-01T16:32:12.020Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-01T16:37:32.101Z] File C:\dev\appointment-scheduler-master\functions\util\validators.js changed, reloading triggers 
+[debug] [2020-05-01T16:37:33.102Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-01T16:37:33.103Z] [worker-~diagnostic~-0e6c4425-49d0-4ab3-a2a1-2eec9d8ae343]: FINISHING 
+[debug] [2020-05-01T16:37:33.105Z] [worker-pool] Shutting down IDLE worker (api) 
+[debug] [2020-05-01T16:37:33.106Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: FINISHING 
+[debug] [2020-05-01T16:37:33.134Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-01T16:37:33.135Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-01T16:37:33.135Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-01T16:37:33.135Z] [worker-~diagnostic~-06968242-3f24-44d0-8960-0363f50c2c30]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\3356 
+[debug] [2020-05-01T16:37:33.135Z] [worker-~diagnostic~-06968242-3f24-44d0-8960-0363f50c2c30]: BUSY 
+[debug] [2020-05-01T16:37:33.137Z] [worker-~diagnostic~-0e6c4425-49d0-4ab3-a2a1-2eec9d8ae343]: exited 
+[debug] [2020-05-01T16:37:33.138Z] [worker-~diagnostic~-0e6c4425-49d0-4ab3-a2a1-2eec9d8ae343]: FINISHED 
+[debug] [2020-05-01T16:37:33.139Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: exited 
+[debug] [2020-05-01T16:37:33.140Z] [worker-api-7df9dc2e-19e9-444b-b664-a3e737e6a6d5]: FINISHED 
+[debug] [2020-05-01T16:37:34.647Z] [runtime-status] [3356] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T16:37:34.653Z] [runtime-status] [3356] Disabled runtime features: undefined 
+[debug] [2020-05-01T16:37:34.668Z] [runtime-status] [3356] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:37:34.672Z] [runtime-status] [3356] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-01T16:37:34.678Z] [runtime-status] [3356] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T16:37:34.765Z] [runtime-status] [3356] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T16:37:34.766Z] [runtime-status] [3356] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:37:34.767Z] [runtime-status] [3356] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T16:37:34.768Z] [runtime-status] [3356] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T16:37:34.769Z] [runtime-status] [3356] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T16:37:35.086Z] [runtime-status] [3356] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-05-01T16:37:36.123Z] [worker-~diagnostic~-06968242-3f24-44d0-8960-0363f50c2c30]: IDLE 
+[debug] [2020-05-01T17:02:29.948Z] ----------------------------------------------------------------------
+[debug] [2020-05-01T17:02:29.954Z] Command:       C:\node.js\node.exe C:\Users\gsharpp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-05-01T17:02:29.955Z] CLI Version:   8.2.0
+[debug] [2020-05-01T17:02:29.955Z] Platform:      win32
+[debug] [2020-05-01T17:02:29.955Z] Node Version:  v13.13.0
+[debug] [2020-05-01T17:02:29.956Z] Time:          Fri May 01 2020 19:02:29 GMT+0200 (Central European Summer Time)
+[debug] [2020-05-01T17:02:29.956Z] ----------------------------------------------------------------------
+[debug] [2020-05-01T17:02:29.956Z] 
+[debug] [2020-05-01T17:02:29.978Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-01T17:02:29.979Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project dbtronics-79c66. This may result in unexpected behavior.
+[debug] [2020-05-01T17:02:32.089Z] [hub] writing locator at C:\Users\gsharpp\AppData\Local\Temp\hub-dbtronics-79c66.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[info] +  functions: Using node@13 from host.
+[info] +  functions: functions emulator started at http://localhost:5011
+[info] i  functions: Watching "C:\dev\appointment-scheduler-master\functions" for Cloud Functions...
+[debug] [2020-05-01T17:02:34.181Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-01T17:02:34.181Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-01T17:02:34.181Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-01T17:02:34.182Z] [worker-~diagnostic~-24f2f29f-1d65-4295-baa0-0a9cd04888db]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\11164 
+[debug] [2020-05-01T17:02:34.182Z] [worker-~diagnostic~-24f2f29f-1d65-4295-baa0-0a9cd04888db]: BUSY 
+[debug] [2020-05-01T17:02:35.332Z] [runtime-status] [11164] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T17:02:35.337Z] [runtime-status] [11164] Disabled runtime features: undefined 
+[debug] [2020-05-01T17:02:35.346Z] [runtime-status] [11164] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:35.357Z] [runtime-status] [11164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-01T17:02:35.365Z] [runtime-status] [11164] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T17:02:35.514Z] [runtime-status] [11164] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T17:02:35.515Z] [runtime-status] [11164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:35.520Z] [runtime-status] [11164] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:35.521Z] [runtime-status] [11164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:35.521Z] [runtime-status] [11164] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T17:02:35.944Z] [runtime-status] [11164] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[info] +  functions[api]: http function initialized (http://localhost:5011/dbtronics-79c66/us-central1/api).
+[info] +  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-05-01T17:02:37.253Z] [worker-~diagnostic~-24f2f29f-1d65-4295-baa0-0a9cd04888db]: IDLE 
+[debug] [2020-05-01T17:02:51.962Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-01T17:02:51.962Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-01T17:02:51.963Z] Accepted request GET /dbtronics-79c66/us-central1/api/user --> api
+[debug] [2020-05-01T17:02:51.988Z] [worker-pool] addWorker(api) 
+[debug] [2020-05-01T17:02:51.988Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-05-01T17:02:51.988Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-01T17:02:51.990Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:02:51.990Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: BUSY 
+[debug] [2020-05-01T17:02:53.091Z] [runtime-status] [14796] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T17:02:53.096Z] [runtime-status] [14796] Disabled runtime features: undefined 
+[debug] [2020-05-01T17:02:53.104Z] [runtime-status] [14796] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:53.111Z] [runtime-status] [14796] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-01T17:02:53.116Z] [runtime-status] [14796] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T17:02:53.220Z] [runtime-status] [14796] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T17:02:53.220Z] [runtime-status] [14796] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:53.222Z] [runtime-status] [14796] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:53.223Z] [runtime-status] [14796] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T17:02:53.223Z] [runtime-status] [14796] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T17:02:53.568Z] [runtime-status] [14796] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-05-01T17:02:54.623Z] [runtime-status] [14796] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-01T17:02:54.624Z] [runtime-status] [14796] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-01T17:02:54.624Z] [runtime-status] [14796] Running api in mode HTTPS 
+[debug] [2020-05-01T17:02:54.631Z] [runtime-status] [14796] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:02:54.636Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-01T17:02:54.656Z] [runtime-status] [14796] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-05-01T17:02:54.816Z] [runtime-status] [14796] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-01T17:02:55.004Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: IDLE 
+[debug] [2020-05-01T17:02:55.005Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-01T17:03:44.223Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-01T17:03:44.223Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-01T17:03:44.223Z] Accepted request POST /dbtronics-79c66/us-central1/api/login --> api
+[debug] [2020-05-01T17:03:44.223Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-01T17:03:44.223Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:03:44.223Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: BUSY 
+[debug] [2020-05-01T17:03:44.224Z] [runtime-status] [14796] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-01T17:03:44.225Z] [runtime-status] [14796] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-01T17:03:44.226Z] [runtime-status] [14796] Running api in mode HTTPS 
+[debug] [2020-05-01T17:03:44.226Z] [runtime-status] [14796] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:03:44.227Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-01T17:03:44.279Z] [runtime-status] [14796] Ephemeral server handling POST request 
+[debug] [2020-05-01T17:03:44.291Z] [runtime-status] [14796] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-01T17:03:44.373Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: IDLE 
+[debug] [2020-05-01T17:03:44.374Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  Error: Your API key is invalid, please check you have copied it correctly. {"user":"Error: Your API key is invalid, please check you have copied it correctly."}
+[debug] [2020-05-01T17:04:50.689Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-01T17:04:50.689Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-01T17:04:50.689Z] Accepted request GET /dbtronics-79c66/us-central1/api/user --> api
+[debug] [2020-05-01T17:04:50.689Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-01T17:04:50.689Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:04:50.689Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: BUSY 
+[debug] [2020-05-01T17:04:50.690Z] [runtime-status] [14796] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-01T17:04:50.765Z] [runtime-status] [14796] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-01T17:04:50.766Z] [runtime-status] [14796] Running api in mode HTTPS 
+[debug] [2020-05-01T17:04:50.767Z] [runtime-status] [14796] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:04:50.768Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-01T17:04:50.770Z] [runtime-status] [14796] Ephemeral server handling GET request 
+[info] >  No token found {"user":"No token found"}
+[debug] [2020-05-01T17:04:50.777Z] [runtime-status] [14796] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-01T17:04:50.782Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: IDLE 
+[debug] [2020-05-01T17:04:50.783Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-01T17:13:09.455Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-01T17:13:09.456Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-01T17:13:09.457Z] Accepted request POST /dbtronics-79c66/us-central1/api/login --> api
+[debug] [2020-05-01T17:13:09.457Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-01T17:13:09.458Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:13:09.458Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: BUSY 
+[debug] [2020-05-01T17:13:09.459Z] [runtime-status] [14796] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-01T17:13:09.460Z] [runtime-status] [14796] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-01T17:13:09.461Z] [runtime-status] [14796] Running api in mode HTTPS 
+[debug] [2020-05-01T17:13:09.461Z] [runtime-status] [14796] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14796 
+[debug] [2020-05-01T17:13:09.462Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-01T17:13:09.467Z] [runtime-status] [14796] Ephemeral server handling POST request 
+[debug] [2020-05-01T17:13:09.473Z] [runtime-status] [14796] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-01T17:13:09.474Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: IDLE 
+[debug] [2020-05-01T17:13:09.474Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  Error: Your API key is invalid, please check you have copied it correctly. {"user":"Error: Your API key is invalid, please check you have copied it correctly."}
+[debug] [2020-05-01T18:05:54.535Z] File C:\dev\appointment-scheduler-master\functions\util\config.js changed, reloading triggers 
+[debug] [2020-05-01T18:05:55.551Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-01T18:05:55.551Z] [worker-~diagnostic~-24f2f29f-1d65-4295-baa0-0a9cd04888db]: FINISHING 
+[debug] [2020-05-01T18:05:55.552Z] [worker-pool] Shutting down IDLE worker (api) 
+[debug] [2020-05-01T18:05:55.552Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: FINISHING 
+[debug] [2020-05-01T18:05:55.586Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-01T18:05:55.586Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-01T18:05:55.586Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-01T18:05:55.586Z] [worker-~diagnostic~-6a645c91-f9c9-4aea-af12-307e86b12e24]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\16668 
+[debug] [2020-05-01T18:05:55.587Z] [worker-~diagnostic~-6a645c91-f9c9-4aea-af12-307e86b12e24]: BUSY 
+[debug] [2020-05-01T18:05:55.604Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: exited 
+[debug] [2020-05-01T18:05:55.604Z] [worker-api-e89be1a8-da21-4baa-8fd2-4b34c1ce9cc6]: FINISHED 
+[debug] [2020-05-01T18:05:55.604Z] [worker-~diagnostic~-24f2f29f-1d65-4295-baa0-0a9cd04888db]: exited 
+[debug] [2020-05-01T18:05:55.604Z] [worker-~diagnostic~-24f2f29f-1d65-4295-baa0-0a9cd04888db]: FINISHED 
+[debug] [2020-05-01T18:05:56.826Z] [runtime-status] [16668] Functions runtime initialized. {"cwd":"C:\\dev\\appointment-scheduler-master\\functions","node_version":"13.13.0"} 
+[debug] [2020-05-01T18:05:56.832Z] [runtime-status] [16668] Disabled runtime features: undefined 
+[debug] [2020-05-01T18:05:56.847Z] [runtime-status] [16668] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T18:05:56.850Z] [runtime-status] [16668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\dev\todoauth.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-01T18:05:56.859Z] [runtime-status] [16668] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-01T18:05:57.075Z] [runtime-status] [16668] Checked functions.config() {"config":{}} 
+[debug] [2020-05-01T18:05:57.077Z] [runtime-status] [16668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T18:05:57.078Z] [runtime-status] [16668] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-01T18:05:57.078Z] [runtime-status] [16668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-01T18:05:57.078Z] [runtime-status] [16668] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\dev\\appointment-scheduler-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-01T18:05:57.611Z] [runtime-status] [16668] initializeApp(DEFAULT) {"databaseURL":"https://dbtronics-79c66.firebaseio.com","storageBucket":"dbtronics-79c66.appspot.com","projectId":"dbtronics-79c66"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.

@@ -2,12 +2,16 @@ const isEmpty = (string) => {
 	if (string.trim() === '') return true;
 	else return false;
 };
-
+const errorMsg = {
+	empty: 'Must not be empty',
+	password: 'Passowrds must be the same',
+	email: 'Must be valid email address'
+}
 exports.validateLoginData = (data) => {
 	let errors = {};
 
-	if (isEmpty(data.email)) errors.email = 'Must not be empty';
-	if (isEmpty(data.password)) errors.password = 'Must not be empty';
+	if (isEmpty(data.email)) errors.email = errorMsg.empty;
+	if (isEmpty(data.password)) errors.password = errorMsg.empty;
 
 	return {
 		errors,
@@ -24,20 +28,21 @@ const isEmail = (email) => {
 exports.validateSignUpData = (data) => {
 	let errors = {};
 
+
 	if (isEmpty(data.email)) {
-		errors.email = 'Must not be empty';
+		errors.email = errorMsg.empty;
 	} else if (!isEmail(data.email)) {
-		errors.email = 'Must be valid email address';
+		errors.email = errorMsg.email;
 	}
 
-	if (isEmpty(data.firstName)) errors.firstName = 'Must not be empty';
-	if (isEmpty(data.lastName)) errors.lastName = 'Must not be empty';
-	if (isEmpty(data.phoneNumber)) errors.phoneNumber = 'Must not be empty';
-	if (isEmpty(data.country)) errors.country = 'Must not be empty';
+	if (isEmpty(data.firstName)) errors.firstName = errorMsg.empty;
+	if (isEmpty(data.lastName)) errors.lastName = errorMsg.empty;
+	if (isEmpty(data.phoneNumber)) errors.phoneNumber = errorMsg.empty;
+	if (isEmpty(data.country)) errors.country = errorMsg.empty;
 
-	if (isEmpty(data.password)) errors.password = 'Must not be empty';
-	if (data.password !== data.confirmPassword) errors.confirmPassword = 'Passowrds must be the same';
-	if (isEmpty(data.username)) errors.username = 'Must not be empty';
+	if (isEmpty(data.password)) errors.password = errorMsg.empty;
+	if (data.password !== data.confirmPassword) errors.confirmPassword = errorMsg.password;
+	if (isEmpty(data.username)) errors.username = errorMsg.empty;
 
 	return {
 		errors,
