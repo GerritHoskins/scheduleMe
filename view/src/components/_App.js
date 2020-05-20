@@ -161,7 +161,7 @@ export default class App extends Component {
     return els
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     Cosmic.getObjectType(this.state.config, { type_slug: 'appointments' }, (err, response) =>
       err ? this.handleFetchError(err) : this.handleFetch(response)
     )
