@@ -22,9 +22,9 @@ const {
     signUpUser,
     uploadProfilePhoto,
     getUserDetail,
-    updateUserDetails
+    updateUserDetails,
+    getUsersAsGroup
 } = require('./APIs/users')
-
 
 // Users
 app.post('/login', loginUser);
@@ -32,5 +32,29 @@ app.post('/signup', signUpUser);
 app.post('/user/image', auth ,uploadProfilePhoto);
 app.post('/user', auth ,updateUserDetails);
 app.get('/user', auth, getUserDetail);
+app.get('/users/userGroupSlug/userGroupId', auth, getUsersAsGroup);
+
+const {
+    getNotes,
+    editNote,
+    deleteNote,
+    addNote,
+  } = require( './APIs/notes')
+  
+  app.post('/notes', getNotes);
+  app.post('/edit', editNote);
+  app.post('/delete', deleteNote);
+  app.post('/addNote', addNote);
+
+
+/*   const {
+    selectNotes,
+    selectNoteModel,
+    selectGetNotesStatus,
+    selectAddNoteStatus,
+    selectEditNoteStatus,
+    selectDeleteNoteStatus,
+  } = require( './APIs/selectors') */
+  
 
 exports.api = functions.https.onRequest(app);
