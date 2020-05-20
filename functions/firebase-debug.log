@@ -1021,3 +1021,37 @@ Require stack:
 [info] i  functions: Finished "api" in ~1s
 [debug] [2020-05-20T10:23:01.880Z] [worker-api-3e956698-6431-4120-a7ca-d974409824ce]: IDLE 
 [debug] [2020-05-20T10:23:01.880Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-20T10:27:46.779Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-20T10:27:46.779Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-20T10:27:46.779Z] Accepted request GET /dbtronics-79c66/us-central1/api/user --> api
+[debug] [2020-05-20T10:27:46.779Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-20T10:27:46.779Z] [worker-api-3e956698-6431-4120-a7ca-d974409824ce]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14004 
+[debug] [2020-05-20T10:27:46.779Z] [worker-api-3e956698-6431-4120-a7ca-d974409824ce]: BUSY 
+[debug] [2020-05-20T10:27:46.780Z] [runtime-status] [14004] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-20T10:27:46.781Z] [runtime-status] [14004] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-20T10:27:46.781Z] [runtime-status] [14004] Running api in mode HTTPS 
+[debug] [2020-05-20T10:27:46.781Z] [runtime-status] [14004] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14004 
+[debug] [2020-05-20T10:27:46.782Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-20T10:27:46.784Z] [runtime-status] [14004] Ephemeral server handling GET request 
+[debug] [2020-05-20T10:27:46.784Z] [runtime-status] [14004] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-20T10:27:47.248Z] [worker-api-3e956698-6431-4120-a7ca-d974409824ce]: IDLE 
+[debug] [2020-05-20T10:27:47.248Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-20T10:27:47.371Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-20T10:27:47.371Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-20T10:27:47.371Z] Accepted request GET /dbtronics-79c66/us-central1/api/todos --> api
+[debug] [2020-05-20T10:27:47.371Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-05-20T10:27:47.371Z] [worker-api-3e956698-6431-4120-a7ca-d974409824ce]: Assigning socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14004 
+[debug] [2020-05-20T10:27:47.371Z] [worker-api-3e956698-6431-4120-a7ca-d974409824ce]: BUSY 
+[debug] [2020-05-20T10:27:47.372Z] [runtime-status] [14004] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-05-20T10:27:47.374Z] [runtime-status] [14004] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-05-20T10:27:47.374Z] [runtime-status] [14004] Running api in mode HTTPS 
+[debug] [2020-05-20T10:27:47.374Z] [runtime-status] [14004] Attempting to listen to socketPath: \\?\pipe\C:\dev\appointment-scheduler-master\functions\14004 
+[debug] [2020-05-20T10:27:47.375Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-20T10:27:47.376Z] [runtime-status] [14004] Ephemeral server handling GET request 
+[debug] [2020-05-20T10:27:47.377Z] [runtime-status] [14004] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-05-20T10:27:47.608Z] [worker-api-3e956698-6431-4120-a7ca-d974409824ce]: IDLE 
+[debug] [2020-05-20T10:27:47.608Z] [work-queue] {"queueLength":0,"workRunningCount":0}
