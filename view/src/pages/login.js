@@ -23,14 +23,19 @@ const styles = (theme) => ({
 	},
 	avatar: {
 		margin: theme.spacing(1),
-		backgroundColor: theme.palette.secondary.main
+		backgroundColor: theme.palette.secondary.dark
 	},
 	form: {
 		width: '100%',
 		marginTop: theme.spacing(1)
 	},
+	input: {
+		color: theme.palette.secondary.dark
+	},
 	submit: {
-		margin: theme.spacing(3, 0, 2)
+		margin: theme.spacing(3, 0, 2),
+		color: theme.palette.secondary.dark,
+		borderColor:  theme.palette.secondary.dark
 	},
 	customError: {
 		color: 'red',
@@ -79,7 +84,7 @@ class login extends Component {
 		axios
 			.post('/login', userData)
 			.then((response) => {
-				localStorage.setItem('AuthToken', `Bearer ${response.data.token}`);
+				localStorage.setItem('AuthToken', `Bearer ${response.data.token.token}`);
 				this.setState({
 					loading: false
 				});
@@ -103,19 +108,20 @@ class login extends Component {
 					<Avatar className={classes.avatar}>
 						<LockOutlinedIcon />
 					</Avatar>
-					<Typography component="h1" variant="h5">
+					<Typography color={'primary'} component="h1" variant="h5">
 						Login
 					</Typography>
 					<form className={classes.form} noValidate>
 						<TextField
 							variant="outlined"
+							color="primary"
 							margin="normal"
 							required
 							fullWidth
 							id="email"
-							label="Email Address"
+							placeholder="Email Address"
 							name="email"
-							autoComplete="email"
+							//autoComplete="email"
 							autoFocus
 							helperText={errors.email}
 							error={errors.email ? true : false}
@@ -123,14 +129,15 @@ class login extends Component {
 						/>
 						<TextField
 							variant="outlined"
+							color="primary"
 							margin="normal"
 							required
 							fullWidth
 							name="password"
-							label="Password"
+							placeholder="Password"
 							type="password"
 							id="password"
-							autoComplete="current-password"
+							//autoComplete="current-password"
 							helperText={errors.password}
 							error={errors.password ? true : false}
 							onChange={this.handleChange}
@@ -138,8 +145,7 @@ class login extends Component {
 						<Button
 							type="submit"
 							fullWidth
-							variant="contained"
-							color="primary"
+							variant="outlined"							
 							className={classes.submit}
 							onClick={this.handleSubmit}
 							disabled={loading || !this.state.email || !this.state.password}

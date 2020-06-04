@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -77,10 +76,10 @@ const styles = (theme) => ({
 	dialogeStyle: {
 		maxWidth: '50%'
 	},
-	viewRoot: {
+	/* viewRoot: {
 		margin: 0,
 		padding: theme.spacing(2)
-	},
+	}, */
 	closeButton: {
 		position: 'absolute',
 		right: theme.spacing(1),
@@ -102,6 +101,8 @@ class todo extends Component {
 			title: '',
 			body: '',
 			todoId: '',
+			status: '',
+			userId: '',
 			errors: [],
 			open: false,
 			uiLoading: true,
@@ -120,7 +121,7 @@ class todo extends Component {
 		});
 	};
 
-	UNSAFE_componentWillMount = () => {
+	componentDidMount = () => {
 		authMiddleWare(this.props.history);
 		const authToken = localStorage.getItem('AuthToken');
 		axios.defaults.headers.common = { Authorization: `${authToken}` };
@@ -155,8 +156,10 @@ class todo extends Component {
 	handleEditClickOpen(data) {
 		this.setState({
 			title: data.todo.title,
-			body: data.todo.body,
+			body: data.todo.body.body,
 			todoId: data.todo.todoId,
+			userId: data.todo.userId,			
+			status: data.todo.status,			
 			buttonType: 'Edit',
 			open: true
 		});
@@ -165,7 +168,8 @@ class todo extends Component {
 	handleViewOpen(data) {
 		this.setState({
 			title: data.todo.title,
-			body: data.todo.body,
+			body: data.todo.body.body,
+			status: data.todo.status,
 			viewOpen: true
 		});
 	}
@@ -186,9 +190,9 @@ class todo extends Component {
 		});
 
 		const DialogContent = withStyles((theme) => ({
-			viewRoot: {
+			/* viewRoot: {
 				padding: theme.spacing(2)
-			}
+			} */
 		}))(MuiDialogContent);
 
 		dayjs.extend(relativeTime);
@@ -200,6 +204,8 @@ class todo extends Component {
 				todoId: '',
 				title: '',
 				body: '',
+				userId: '',			
+				status:'',	
 				buttonType: '',
 				open: true
 			});
@@ -210,7 +216,9 @@ class todo extends Component {
 			event.preventDefault();
 			const userTodo = {
 				title: this.state.title,
-				body: this.state.body
+				body: this.state.body,
+				userId: this.state.userId,
+				status:this.state.status
 			};
 			let options = {};
 			if (this.state.buttonType === 'Edit') {
@@ -267,7 +275,12 @@ class todo extends Component {
 					>
 						<AddCircleIcon style={{ fontSize: 60 }} />
 					</IconButton>
-					<Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
+					<Dialog
+						fullScreen={true}
+						open={open}
+						onClose={handleClose}
+						TransitionComponent={Transition}
+						keepMounted={true}>
 						<AppBar className={classes.appBar}>
 							<Toolbar>
 								<IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
@@ -309,6 +322,21 @@ class todo extends Component {
 										variant="outlined"
 										required
 										fullWidth
+										id="todoStatus"
+										label="Status"
+										name="status"
+										autoComplete="todoStatus"
+										helperText={errors.status}
+										value={this.state.status}
+										error={errors.status ? true : false}
+										onChange={this.handleChange}
+									/>
+								</Grid>
+								<Grid item xs={12}>
+									<TextField
+										variant="outlined"
+										required
+										fullWidth
 										id="todoDetails"
 										label="Todo Details"
 										name="body"
@@ -327,6 +355,7 @@ class todo extends Component {
 					</Dialog>
 
 					<Grid container spacing={2}>
+					{/* 	<TodoGrid todos={this.state.todos} /> */}
 						{this.state.todos.map((todo) => (
 							<Grid key={todo.todoId} item xs={12} sm={6}>
 								<Card className={classes.root} variant="outlined">
@@ -338,7 +367,7 @@ class todo extends Component {
 											{dayjs(todo.createdAt).fromNow()}
 										</Typography>
 										<Typography variant="body2" component="p">
-											{`${todo.body.substring(0, 65)}`}
+											{`${todo.body.body}`}
 										</Typography>
 									</CardContent>
 									<CardActions>
@@ -361,20 +390,22 @@ class todo extends Component {
 					<Dialog
 						onClose={handleViewClose}
 						aria-labelledby="customized-dialog-title"
+						TransitionComponent={Transition}
 						open={viewOpen}
-						fullWidth
+						fullWidth={true}
+						keepMounted={true}
 						classes={{ paperFullWidth: classes.dialogeStyle }}
 					>
 						<DialogTitle id="customized-dialog-title" onClose={handleViewClose}>
 							{this.state.title}
 						</DialogTitle>
-						<DialogContent dividers>
+						<DialogContent dividers={true}>
 							<TextField
-								fullWidth
+								fullWidth={true}
 								id="todoDetails"
 								name="body"
 								multiline
-								readonly
+								readOnly
 								rows={1}
 								rowsMax={25}
 								value={this.state.body}
@@ -383,7 +414,7 @@ class todo extends Component {
 								}}
 							/>
 						</DialogContent>
-					</Dialog>
+					</Dialog>					
 				</main>
 			);
 		}

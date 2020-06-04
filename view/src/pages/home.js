@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Account from '../components/account';
 import Todo from '../components/todo';
+import Progress from '../components/progress';
 
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
@@ -62,16 +63,25 @@ const styles = (theme) => ({
 });
 
 class home extends Component {
-	state = {
-		render: false
-	};
+
+	resetComponentStatus = (component) => {
+		this.setState({	
+			account : component === "account" ? true : false,
+			progress : component === "progress" ? true : false,
+			todo : component === "todo" ? true : false
+		});
+	}
 
 	loadAccountPage = (event) => {
-		this.setState({ render: true });
+		this.resetComponentStatus("account");
 	};
 
 	loadTodoPage = (event) => {
-		this.setState({ render: false });
+		this.resetComponentStatus("todo");	
+	};
+
+	loadProgressPage = (event) => {
+		this.resetComponentStatus("progress");	
 	};
 
 	logoutHandler = (event) => {
@@ -87,7 +97,10 @@ class home extends Component {
 			lastName: '',
 			profilePicture: '',
 			uiLoading: true,
-			imageLoading: false
+			imageLoading: false,
+			account: false,
+			todo: true,
+			progress: false			
 		};
 	}
 
@@ -95,23 +108,25 @@ class home extends Component {
 		authMiddleWare(this.props.history);
 		const authToken = localStorage.getItem('AuthToken');
 		axios.defaults.headers.common = { Authorization: `${authToken}` };
+	/* 	axios
+			.post('/auth') */
 		axios
 			.get('/user')
 			.then((response) => {
-				console.log(response.data);
+				console.log('client',response.data);
 				this.setState({
-					firstName: response.data.userCredentials.firstName,
-					lastName: response.data.userCredentials.lastName,
-					email: response.data.userCredentials.email,
-					phoneNumber: response.data.userCredentials.phoneNumber,
-					country: response.data.userCredentials.country,
-					username: response.data.userCredentials.username,
+					firstName: response.data.firstName,
+					lastName: response.data.lastName,
+					email: response.data.email,
+					phoneNumber: response.data.phoneNumber,
+					country: response.data.country,
+					username: response.data.username,
 					uiLoading: false,
-					profilePicture: response.data.userCredentials.imageUrl
+					profilePicture: response.data.imageUrl
 				});
 			})
 			.catch((error) => {
-				if (error.response.status === 403) {
+				if (error ) {
 					this.props.history.push('/login');
 				}
 				console.log(error);
@@ -163,7 +178,13 @@ class home extends Component {
 								</ListItemIcon>
 								<ListItemText primary="Todo" />
 							</ListItem>
-
+							<ListItem button key="Progress"onClick={this.loadProgressPage}>
+								<ListItemIcon>
+									{' '}
+									<NotesIcon />{' '}
+								</ListItemIcon>
+								<ListItemText primary="Pogress" />
+							</ListItem>
 							<ListItem button key="Account" onClick={this.loadAccountPage}>
 								<ListItemIcon>
 									{' '}
@@ -182,7 +203,12 @@ class home extends Component {
 						</List>
 					</Drawer>
 
-					<div>{this.state.render ? <Account /> : <Todo />}</div>
+					<div>
+					{this.state.account && <Account />}
+					{this.state.todo && <Todo /> }
+					{this.state.progress && <Progress /> }
+						
+					</div> 
 				</div>
 			);
 		}

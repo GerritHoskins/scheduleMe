@@ -92,12 +92,14 @@ class account extends Component {
 					phoneNumber: response.data.userCredentials.phoneNumber,
 					country: response.data.userCredentials.country,
 					username: response.data.userCredentials.username,
+					imageUrl: response.data.userCredentials.imageUrl,
 					uiLoading: false
 				});
 			})
 			.catch((error) => {
 				if (error.response.status === 403) {
-					this.props.history.push('/login');
+					
+					this.props.history ? this.props.history.push('/login') : document.location.href = '/login';
 				}
 				console.log(error);
 				this.setState({ errorMsg: 'Error in retrieving the data' });
@@ -157,7 +159,8 @@ class account extends Component {
 		const formRequest = {
 			firstName: this.state.firstName,
 			lastName: this.state.lastName,
-			country: this.state.country
+			country: this.state.country,
+			image: this.state.image
 		};
 		axios
 			.post('/user', formRequest)
@@ -206,7 +209,11 @@ class account extends Component {
 									>
 										Upload Photo
 									</Button>
-									<input type="file" onChange={this.handleImageChange} />
+									<input type="file"
+											color="primary"
+											className={classes.submitButton}
+											variant="contained"
+											onChange={this.handleImageChange} />
 
 									{this.state.imageError ? (
 										<div className={classes.customError}>

@@ -7,23 +7,21 @@ firebase.initializeApp(config);
 const { validateLoginData, validateSignUpData } = require('../util/validators');
 
 // Login
-exports.loginUser = (request, response) => {
+exports.loginUser = async(request, response) => {
     const user = {
         email: request.body.email,
         password: request.body.password
     }
-
     const { valid, errors } = validateLoginData(user);
     if (!valid) return response.status(400).json(errors);
-
-    firebase
+    await firebase
         .auth()
         .signInWithEmailAndPassword(user.email, user.password)
         .then((data) => {
-            return data.user.getIdToken();
+            return data.user.getIdTokenResult();
         })
         .then((token) => {
-            return response.json({ token });
+            return response.json({ token })
         })
         .catch((error) => {
             console.error(error);
@@ -45,7 +43,8 @@ exports.signUpUser = (request, response) => {
         country: request.body.country,
         password: request.body.password,
         confirmPassword: request.body.confirmPassword,
-        username: request.body.username
+        username: request.body.username,
+        imageUrl: ""
     };
 
     const { valid, errors } = validateSignUpData(newUser);
@@ -70,7 +69,7 @@ exports.signUpUser = (request, response) => {
         })
         .then((data) => {
             userId = data.user.uid;
-            return data.user.getIdToken();
+            return data.user.getIdTokenResult();
         })
         .then((idtoken) => {
             token = idtoken;
@@ -82,6 +81,7 @@ exports.signUpUser = (request, response) => {
                 country: newUser.country,
                 email: newUser.email,
                 createdAt: new Date().toISOString(),
+                imageUrl: "",
                 userId
             };
             return db
