@@ -19,6 +19,7 @@ exports.getAllTodos = (request, response) => {
                     createdAt: doc.data().createdAt,
                 });
             });
+            console.error("steü1",  response.json(todos));
             return response.json(todos);
         })
         .catch((err) => {
@@ -110,6 +111,7 @@ exports.deleteTodo = (request, response) => {
 };
 
 exports.editTodo = (request, response) => {
+    console.log("req body", request);
     if (request.body.todoId || request.body.createdAt) {
         response.status(403).json({ message: 'Not allowed to edit' });
     }

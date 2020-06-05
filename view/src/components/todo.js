@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 import TextField from '@material-ui/core/TextField';
+import Select from '@material-ui/core/Select';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -17,6 +18,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import CardContent from '@material-ui/core/CardContent';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
+import MenuItem from '@material-ui/core/MenuItem';
 
 import axios from 'axios';
 import dayjs from 'dayjs';
@@ -170,6 +172,8 @@ class todo extends Component {
 			title: data.todo.title,
 			body: data.todo.body.body,
 			status: data.todo.status,
+			userId: data.todo.userId,			
+			status: data.todo.status,
 			viewOpen: true
 		});
 	}
@@ -218,7 +222,7 @@ class todo extends Component {
 				title: this.state.title,
 				body: this.state.body,
 				userId: this.state.userId,
-				status:this.state.status
+				status: this.state.status
 			};
 			let options = {};
 			if (this.state.buttonType === 'Edit') {
@@ -318,19 +322,22 @@ class todo extends Component {
 									/>
 								</Grid>
 								<Grid item xs={12}>
-									<TextField
+									<Select
 										variant="outlined"
 										required
 										fullWidth
 										id="todoStatus"
 										label="Status"
-										name="status"
+										name="status"										
 										autoComplete="todoStatus"
-										helperText={errors.status}
-										value={this.state.status}
-										error={errors.status ? true : false}
+										value={this.state.status}										
 										onChange={this.handleChange}
-									/>
+									>
+										<MenuItem value="requested">requested</MenuItem>
+										<MenuItem value="assigned">assigned</MenuItem>
+										<MenuItem value="in progress">in progress</MenuItem>
+										<MenuItem value="completed">completed</MenuItem>
+									</Select>
 								</Grid>
 								<Grid item xs={12}>
 									<TextField

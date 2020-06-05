@@ -149,7 +149,7 @@ class home extends Component {
 					<AppBar position="fixed" className={classes.appBar}>
 						<Toolbar>
 							<Typography variant="h6" noWrap>
-								TodoApp
+								dashtronics
 							</Typography>
 						</Toolbar>
 					</AppBar>

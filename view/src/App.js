@@ -30,10 +30,10 @@ dark: '#000007',
 const theme = createMuiTheme({
 
 	palette: {
-		/*background: '#0a192f',*/
+		/* background: '#0a192f', */
 		primary: {
 			light: '#FFC464',
-			main: '#4ecdc4',			
+			main: '#0a192f',			
 			dark: '#333f58',
 			contrastText: '#e6f1ff'
 		},
@@ -42,7 +42,7 @@ const theme = createMuiTheme({
 			main: '#FF9E64',			
 			dark: '#2d3952',
 			contrastText: '#4ecdc4'
-		}		
+		}
   }
 });
 
