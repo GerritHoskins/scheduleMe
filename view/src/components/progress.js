@@ -92,7 +92,7 @@ const onDragEnd = (result, columns, setColumns) => {
 
 function Progress(props) {
   const [columns, setColumns] = useState(columnsFromBackend);
- // const [columns2, setColumns2] = useState();
+  const [todos, setTodos] = useState();
   const history = props.history;
   const { classes } = props;
 
@@ -101,17 +101,17 @@ function Progress(props) {
     const authToken = localStorage.getItem('AuthToken');
     axios.defaults.headers.common = { Authorization: `${authToken}` };
     axios
-      .get('/columns')
+      .get('/progress')
       .then((response) => {
-        setState({
-          columns: response.data,
+        setTodos({
+          todos: response.data,
           uiLoading: false
         });
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [todos]);
 
   return (
     <main className={classes.content}

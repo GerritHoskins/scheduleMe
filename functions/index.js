@@ -13,7 +13,8 @@ const {
   getOneTodo,
   postOneTodo,
   deleteTodo,
-  editTodo
+  editTodo,
+  getTodosGroupedByStatus
  /*  getAllTodoStatusColumns */
 } = require('./APIs/todos')
 
@@ -23,7 +24,7 @@ app.get('/todo/:todoId', auth, getOneTodo);
 app.post('/todo', auth, postOneTodo);
 app.delete('/todo/:todoId', auth, deleteTodo);
 app.put('/todo/:todoId', auth, editTodo);
-/* app.get('/columns', auth, getAllTodoStatusColumns); */
+app.get('/progress', auth, getTodosGroupedByStatus);
 
 const {
   loginUser,

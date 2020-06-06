@@ -1,5 +1,33 @@
 const { db } = require('../util/admin');
 
+exports.getTodosGroupedByStatus = (request, response) => {
+    db
+        .collectionGroup('status')
+        .where('username', '==', request.user.username)
+        .orderBy('createdAt', 'desc')
+        .get()
+        .then((data) => {
+            let todos = [];
+            data.forEach((doc) => {
+                todos.push({
+                    todoId: doc.id,
+                    title: doc.data().title,
+                    username: doc.data().username,
+                    userId: doc.data().userId,
+                    body: doc.data().body,
+                    status: doc.data().status,
+                    createdAt: doc.data().createdAt,
+                });
+            });
+            return response.json(todos);
+        })
+        .catch((err) => {
+            console.error(err);
+            return response.status(500).json({ error: err.code });
+        });
+};
+
+
 exports.getAllTodos = (request, response) => {
     db
         .collection('todos')
@@ -19,7 +47,6 @@ exports.getAllTodos = (request, response) => {
                     createdAt: doc.data().createdAt,
                 });
             });
-            console.error("steü1",  response.json(todos));
             return response.json(todos);
         })
         .catch((err) => {
@@ -111,7 +138,6 @@ exports.deleteTodo = (request, response) => {
 };
 
 exports.editTodo = (request, response) => {
-    console.log("req body", request);
     if (request.body.todoId || request.body.createdAt) {
         response.status(403).json({ message: 'Not allowed to edit' });
     }

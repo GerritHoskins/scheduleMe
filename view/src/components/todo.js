@@ -19,7 +19,7 @@ import CardContent from '@material-ui/core/CardContent';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MenuItem from '@material-ui/core/MenuItem';
-
+import InputLabel from '@material-ui/core/InputLabel';
 import axios from 'axios';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
@@ -118,8 +118,10 @@ class todo extends Component {
 	}
 
 	handleChange = (event) => {
+		const name = event.target.name;
 		this.setState({
-			[event.target.name]: event.target.value
+		  ...this.state,
+		  [name]: event.target.value,
 		});
 	};
 
@@ -161,7 +163,7 @@ class todo extends Component {
 			body: data.todo.body.body,
 			todoId: data.todo.todoId,
 			userId: data.todo.userId,			
-			status: data.todo.status,			
+			status: data.todo.body.status,			
 			buttonType: 'Edit',
 			open: true
 		});
@@ -173,7 +175,7 @@ class todo extends Component {
 			body: data.todo.body.body,
 			status: data.todo.status,
 			userId: data.todo.userId,			
-			status: data.todo.status,
+			status: data.todo.body.status,
 			viewOpen: true
 		});
 	}
@@ -322,16 +324,20 @@ class todo extends Component {
 									/>
 								</Grid>
 								<Grid item xs={12}>
+								<InputLabel htmlFor="todoStatus">Status</InputLabel>
 									<Select
 										variant="outlined"
 										required
 										fullWidth
 										id="todoStatus"
-										label="Status"
 										name="status"										
 										autoComplete="todoStatus"
 										value={this.state.status}										
 										onChange={this.handleChange}
+										inputProps={{
+											name: 'status',
+											id: 'todoStatus',
+										  }}
 									>
 										<MenuItem value="requested">requested</MenuItem>
 										<MenuItem value="assigned">assigned</MenuItem>
@@ -406,7 +412,18 @@ class todo extends Component {
 						<DialogTitle id="customized-dialog-title" onClose={handleViewClose}>
 							{this.state.title}
 						</DialogTitle>
+
 						<DialogContent dividers={true}>
+							<TextField
+								fullWidth={true}
+								id="todoDetailStatus"
+								name="status"
+								readOnly
+								value={`Status: ${this.state.status}`}
+								InputProps={{
+									disableUnderline: true
+								}}
+							/>
 							<TextField
 								fullWidth={true}
 								id="todoDetails"
